@@ -1,0 +1,466 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.g3spy.parent"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Internet permission for Firebase communication -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:5-77
+14-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:22-74
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:24:5-68
+15-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:22-79
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+21
+22    <queries>
+22-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:30:5-34:15
+23
+24        <!-- Needs to be explicitly declared on Android R+ -->
+25        <package android:name="com.google.android.apps.maps" />
+25-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+25-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+26    </queries>
+27
+28    <permission
+28-->[androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+29        android:name="com.g3spy.parent.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29-->[androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+30        android:protectionLevel="signature" />
+30-->[androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+31
+32    <uses-permission android:name="com.g3spy.parent.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32-->[androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+32-->[androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+33
+34    <application
+34-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:9:5-40:19
+35        android:allowBackup="true"
+35-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:10:9-35
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+37        android:dataExtractionRules="@xml/data_extraction_rules"
+37-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:11:9-65
+38        android:debuggable="true"
+39        android:extractNativeLibs="false"
+40        android:fullBackupContent="@xml/backup_rules"
+40-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:12:9-54
+41        android:icon="@mipmap/ic_launcher"
+41-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:13:9-43
+42        android:label="@string/app_name"
+42-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:14:9-41
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:15:9-54
+44        android:supportsRtl="true"
+44-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:16:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.G3SPYParent" >
+46-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:17:9-49
+47
+48        <!-- Main Activity -->
+49        <activity
+49-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:21:9-29:20
+50            android:name="com.g3spy.parent.MainActivity"
+50-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:22:13-41
+51            android:exported="true"
+51-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:23:13-36
+52            android:theme="@style/Theme.G3SPYParent" >
+52-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:24:13-53
+53            <intent-filter>
+53-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:25:13-28:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:26:17-69
+54-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:26:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:27:17-77
+56-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:27:27-74
+57            </intent-filter>
+58        </activity>
+59
+60        <!-- Firebase Service -->
+61        <service
+61-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:32:9-38:19
+62            android:name="com.g3spy.parent.service.FirebaseMessagingService"
+62-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:33:13-61
+63            android:exported="false" >
+63-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:34:13-37
+64            <intent-filter>
+64-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:35:13-37:29
+65                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+65-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:36:17-78
+65-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:36:25-75
+66            </intent-filter>
+67        </service>
+68
+69        <activity
+69-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:29:9-46:20
+70            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+70-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:30:13-80
+71            android:excludeFromRecents="true"
+71-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:31:13-46
+72            android:exported="true"
+72-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:32:13-36
+73            android:launchMode="singleTask"
+73-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:33:13-44
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+74-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:34:13-72
+75            <intent-filter>
+75-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:35:13-45:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
+76-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
+78-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
+79-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
+80
+81                <data
+81-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
+82                    android:host="firebase.auth"
+82-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
+83                    android:path="/"
+83-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
+84                    android:scheme="genericidp" />
+84-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
+85            </intent-filter>
+86        </activity>
+87        <activity
+87-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:47:9-64:20
+88            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+88-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:48:13-79
+89            android:excludeFromRecents="true"
+89-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:49:13-46
+90            android:exported="true"
+90-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:50:13-36
+91            android:launchMode="singleTask"
+91-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:51:13-44
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+92-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:52:13-72
+93            <intent-filter>
+93-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:53:13-63:29
+94                <action android:name="android.intent.action.VIEW" />
+94-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
+94-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
+95
+96                <category android:name="android.intent.category.DEFAULT" />
+96-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
+96-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
+97                <category android:name="android.intent.category.BROWSABLE" />
+97-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
+97-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
+98
+99                <data
+99-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
+100                    android:host="firebase.auth"
+100-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
+101                    android:path="/"
+101-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
+102                    android:scheme="recaptcha" />
+102-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
+103            </intent-filter>
+104        </activity>
+105
+106        <service
+106-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:66:9-72:19
+107            android:name="com.google.firebase.components.ComponentDiscoveryService"
+107-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:67:13-84
+108            android:directBootAware="true"
+108-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+109            android:exported="false" >
+109-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:68:13-37
+110            <meta-data
+110-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:69:13-71:85
+111                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+111-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:70:17-109
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:71:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:17:13-19:85
+114                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+114-->[com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:18:17-122
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:19:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:20:13-22:85
+117                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+117-->[com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:21:17-111
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:22:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+120                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+120-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+122            <meta-data
+122-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+123                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+123-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:30:13-32:85
+126                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+126-->[com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:31:17-118
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:32:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:33:13-35:85
+129                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+129-->[com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:34:17-107
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:35:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+132                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+132-->[com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+135                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+135-->[com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:25:13-27:85
+138                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+138-->[com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:26:17-120
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:27:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:28:13-30:85
+141                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+141-->[com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:29:17-117
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:30:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+144                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+144-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+147                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+147-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+150                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+150-->[com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+152        </service>
+153
+154        <receiver
+154-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+155            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+155-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+156            android:exported="true"
+156-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+157            android:permission="com.google.android.c2dm.permission.SEND" >
+157-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+158            <intent-filter>
+158-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:33:13-35:29
+159                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+159-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:34:17-81
+159-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:34:25-78
+160            </intent-filter>
+161
+162            <meta-data
+162-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+163                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+163-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+164                android:value="true" />
+164-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+165        </receiver>
+166        <!--
+167             FirebaseMessagingService performs security checks at runtime,
+168             but set to not exported to explicitly avoid allowing another app to call it.
+169        -->
+170        <service
+170-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+171            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+171-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+172            android:directBootAware="true"
+172-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+173            android:exported="false" >
+173-->[com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+174            <intent-filter android:priority="-500" >
+174-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:35:13-37:29
+175                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+175-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:36:17-78
+175-->/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:36:25-75
+176            </intent-filter>
+177        </service> <!-- Needs to be explicitly declared on P+ -->
+178        <uses-library
+178-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+179            android:name="org.apache.http.legacy"
+179-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+180            android:required="false" />
+180-->[com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+181
+182        <activity
+182-->[com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+183            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+183-->[com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+185            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+185-->[com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+186
+187        <provider
+187-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+188            android:name="com.google.firebase.provider.FirebaseInitProvider"
+188-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+189            android:authorities="com.g3spy.parent.firebaseinitprovider"
+189-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+190            android:directBootAware="true"
+190-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+191            android:exported="false"
+191-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+192            android:initOrder="100" />
+192-->[com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+193
+194        <activity
+194-->[androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:23:9-25:39
+195            android:name="androidx.activity.ComponentActivity"
+195-->[androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:24:13-63
+196            android:exported="true" />
+196-->[androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:25:13-36
+197        <activity
+197-->[androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:23:9-25:39
+198            android:name="androidx.compose.ui.tooling.PreviewActivity"
+198-->[androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:24:13-71
+199            android:exported="true" />
+199-->[androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:25:13-36
+200
+201        <meta-data
+201-->[com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+202            android:name="com.google.android.gms.version"
+202-->[com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+203            android:value="@integer/google_play_services_version" />
+203-->[com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+204
+205        <provider
+205-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+206            android:name="androidx.startup.InitializationProvider"
+206-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+207            android:authorities="com.g3spy.parent.androidx-startup"
+207-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+208            android:exported="false" >
+208-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+209            <meta-data
+209-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+210                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+210-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+211                android:value="androidx.startup" />
+211-->[androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+212            <meta-data
+212-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+213                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+213-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+214                android:value="androidx.startup" />
+214-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+215            <meta-data
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+216                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+217                android:value="androidx.startup" />
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+218        </provider>
+219
+220        <service
+220-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+221            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+221-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+222            android:exported="false" >
+222-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+223            <meta-data
+223-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+224                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+224-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+225                android:value="cct" />
+225-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+226        </service>
+227        <service
+227-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+228            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+228-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+229            android:exported="false"
+229-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+230            android:permission="android.permission.BIND_JOB_SERVICE" >
+230-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+231        </service>
+232
+233        <receiver
+233-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+234            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+234-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+235            android:exported="false" />
+235-->[com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+236        <receiver
+236-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+237            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+237-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+238            android:directBootAware="false"
+238-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+239            android:enabled="true"
+239-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+240            android:exported="true"
+240-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+241            android:permission="android.permission.DUMP" >
+241-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+242            <intent-filter>
+242-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+243                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+243-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+244            </intent-filter>
+245            <intent-filter>
+245-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+246                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+246-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+247            </intent-filter>
+248            <intent-filter>
+248-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+249                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+249-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+250            </intent-filter>
+251            <intent-filter>
+251-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+252                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+252-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+253            </intent-filter>
+254        </receiver>
+255    </application>
+256
+257</manifest>

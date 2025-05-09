@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://g3spy-project-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">123456789012</string>
+    <string name="google_api_key" translatable="false">AIzaSyDummyApiKeyForG3SPYChildApp</string>
+    <string name="google_app_id" translatable="false">1:123456789012:android:abc123def456</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDummyApiKeyForG3SPYChildApp</string>
+    <string name="google_storage_bucket" translatable="false">g3spy-project.appspot.com</string>
+    <string name="project_id" translatable="false">g3spy-project</string>
+</resources>

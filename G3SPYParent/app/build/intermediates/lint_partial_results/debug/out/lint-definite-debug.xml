@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.1.1" type="incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 29">
+        <fix-data conditional="true"/>
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/g3spy/parent/service/FirebaseMessagingService.kt"
+            line="107"
+            column="13"
+            startOffset="4238"
+            endLine="107"
+            endColumn="59"
+            endOffset="4284"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0">
+        <fix-replace
+            description="Change to 1.16.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.16.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="52"
+            column="20"
+            startOffset="1138"
+            endLine="52"
+            endColumn="51"
+            endOffset="1169"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.2 is available: 2.9.0">
+        <fix-replace
+            description="Change to 2.9.0"
+            family="Update versions"
+            oldString="2.6.2"
+            replacement="2.9.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="53"
+            column="20"
+            startOffset="1189"
+            endLine="53"
+            endColumn="68"
+            endOffset="1237"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.7.2 is available: 1.10.1">
+        <fix-replace
+            description="Change to 1.10.1"
+            family="Update versions"
+            oldString="1.7.2"
+            replacement="1.10.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="54"
+            column="20"
+            startOffset="1257"
+            endLine="54"
+            endColumn="62"
+            endOffset="1299"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2023.03.00 is available: 2025.05.00">
+        <fix-replace
+            description="Change to 2025.05.00"
+            family="Update versions"
+            oldString="2023.03.00"
+            replacement="2025.05.00"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="57"
+            column="29"
+            startOffset="1348"
+            endLine="57"
+            endColumn="70"
+            endOffset="1389"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose.material:material-icons-extended than 1.4.3 is available: 1.7.8">
+        <fix-replace
+            description="Change to 1.7.8"
+            family="Update versions"
+            oldString="1.4.3"
+            replacement="1.7.8"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="62"
+            column="20"
+            startOffset="1625"
+            endLine="62"
+            endColumn="77"
+            endOffset="1682"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-compose than 2.6.0 is available: 2.9.0">
+        <fix-replace
+            description="Change to 2.9.0"
+            family="Update versions"
+            oldString="2.6.0"
+            replacement="2.9.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="64"
+            column="20"
+            startOffset="1799"
+            endLine="64"
+            endColumn="66"
+            endOffset="1845"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.10.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.10.0"
+            replacement="1.12.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="67"
+            column="20"
+            startOffset="1922"
+            endLine="67"
+            endColumn="65"
+            endOffset="1967"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 33.13.0">
+        <fix-replace
+            description="Change to 33.13.0"
+            family="Update versions"
+            oldString="32.7.0"
+            replacement="33.13.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="70"
+            column="29"
+            startOffset="2017"
+            endLine="70"
+            endColumn="70"
+            endOffset="2058"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.gms:play-services-maps than 18.1.0 is available: 19.2.0">
+        <fix-replace
+            description="Change to 19.2.0"
+            family="Update versions"
+            oldString="18.1.0"
+            replacement="19.2.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="77"
+            column="20"
+            startOffset="2365"
+            endLine="77"
+            endColumn="70"
+            endOffset="2415"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="84"
+            column="31"
+            startOffset="2596"
+            endLine="84"
+            endColumn="62"
+            endOffset="2627"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="85"
+            column="31"
+            startOffset="2658"
+            endLine="85"
+            endColumn="75"
+            endOffset="2702"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.compose:compose-bom than 2023.03.00 is available: 2025.05.00">
+        <fix-replace
+            description="Change to 2025.05.00"
+            family="Update versions"
+            oldString="2023.03.00"
+            replacement="2025.05.00"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="86"
+            column="40"
+            startOffset="2742"
+            endLine="86"
+            endColumn="81"
+            endOffset="2783"/>
+    </incident>
+
+</incidents>

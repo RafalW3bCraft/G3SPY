@@ -1,0 +1,30 @@
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.0'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.1.1' apply false
+    id 'com.android.library' version '8.1.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.21' apply false
+}
+
+// Configure Java toolchain to use Java 17
+allprojects {
+    // Only apply if Android Studio doesn't override
+    tasks.withType(JavaCompile).configureEach {
+        try {
+            javaCompiler = javaToolchains.compilerFor {
+                languageVersion = JavaLanguageVersion.of(17)
+            }
+        } catch (Exception e) {
+            println "Note: Using default Java compiler - this is OK if using Android Studio"
+        }
+    }
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            jvmTarget = "17"
+        }
+    }
+}

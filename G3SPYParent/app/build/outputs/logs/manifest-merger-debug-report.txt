@@ -1,0 +1,909 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [io.coil-kt:coil-compose:2.4.0] /home/rafal/.gradle/caches/transforms-3/bf028779f24d48ae1eea547190ea109a/transformed/jetified-coil-compose-2.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.10.0] /home/rafal/.gradle/caches/transforms-3/0f602b23854e981499d9b7e707b74bd0/transformed/material-1.10.0/AndroidManifest.xml:17:1-24:12
+MERGED from [io.coil-kt:coil-compose-base:2.4.0] /home/rafal/.gradle/caches/transforms-3/5384ab016eb7d52f12d3a9ea779285d1/transformed/jetified-coil-compose-base-2.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.4.0] /home/rafal/.gradle/caches/transforms-3/c73b4e63824221efb1cebd2b0d566ec7/transformed/jetified-coil-2.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:17:1-75:12
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:17:1-66:12
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] /home/rafal/.gradle/caches/transforms-3/fcc7a4409f6776d307d224299fd6e243/transformed/jetified-accompanist-drawablepainter-0.30.1/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.compose.material3:material3:1.0.0] /home/rafal/.gradle/caches/transforms-3/5ea4554611e0ca90e392f67a72dcb175/transformed/jetified-material3-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rafal/.gradle/caches/transforms-3/346de590d57aacd737ec5a8f35032610/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
+MERGED from [io.coil-kt:coil-base:2.4.0] /home/rafal/.gradle/caches/transforms-3/380cc7587847fbf82af595c9a0482e47/transformed/jetified-coil-base-2.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rafal/.gradle/caches/transforms-3/7c661062ef5d3f431af52f6528ffce6d/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rafal/.gradle/caches/transforms-3/d6be66685009447cefd9fff1674da331/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common:2.6.0] /home/rafal/.gradle/caches/transforms-3/40a0d72367509182aea85b5897d3638a/transformed/navigation-common-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.6.0] /home/rafal/.gradle/caches/transforms-3/0f9db480a95d68f2c9da4a7582abd17d/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /home/rafal/.gradle/caches/transforms-3/51514ce14207fa35847a552e3fa6e76b/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.6.0] /home/rafal/.gradle/caches/transforms-3/cea013171744432dc47f9eb784075a61/transformed/navigation-runtime-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-compose:2.6.0] /home/rafal/.gradle/caches/transforms-3/df28ffddae12ed0103ea7a18cb03bbaa/transformed/jetified-navigation-compose-2.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:17:1-44:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rafal/.gradle/caches/transforms-3/637f40aeb579fc9269d5f7f451a628b7/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/rafal/.gradle/caches/transforms-3/6785989fe16d33e08af956f7a2420454/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/rafal/.gradle/caches/transforms-3/bdc04e826a62d733d9dd879b8e19aab8/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/6960490b569c63f8a6cfe265a30fe67f/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.play:integrity:1.1.0] /home/rafal/.gradle/caches/transforms-3/16f30c1d7b7accd09873bd03c07ff2fe/transformed/jetified-integrity-1.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rafal/.gradle/caches/transforms-3/ff632074e9e16dfb618ce7641811e941/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/681d43ffbb0eee1b58dd1ca9e814f28f/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /home/rafal/.gradle/caches/transforms-3/5e652990a4b53508baa948c80e87c41a/transformed/jetified-firebase-installations-interop-17.1.1/AndroidManifest.xml:15:1-19:12
+MERGED from [androidx.compose.animation:animation-core:1.4.3] /home/rafal/.gradle/caches/transforms-3/ccabe704109554fa4d5adbcf4f5b9a24/transformed/jetified-animation-core-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation:1.4.3] /home/rafal/.gradle/caches/transforms-3/38cc657189fe01f247436750b9baf6f2/transformed/jetified-animation-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.3] /home/rafal/.gradle/caches/transforms-3/f17c60ab1aab03aba1a90710098aee54/transformed/jetified-foundation-layout-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.foundation:foundation:1.4.3] /home/rafal/.gradle/caches/transforms-3/c9c52aad3cbbcdab31e6ea31bfdc0856/transformed/jetified-foundation-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-data:1.4.3] /home/rafal/.gradle/caches/transforms-3/41fba7b019c2b3e10f03b70b132d42e8/transformed/jetified-ui-tooling-data-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.4.3] /home/rafal/.gradle/caches/transforms-3/d7f77d71720151feb8aed21e477c66fb/transformed/jetified-ui-tooling-preview-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-util:1.4.3] /home/rafal/.gradle/caches/transforms-3/bb5e0d2f07c908801de5bad875675242/transformed/jetified-ui-util-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-unit:1.4.3] /home/rafal/.gradle/caches/transforms-3/47c2656cab33a3a374341ab49f7aa890/transformed/jetified-ui-unit-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-text:1.4.3] /home/rafal/.gradle/caches/transforms-3/62bf6f14695221154988f78aadf4cd06/transformed/jetified-ui-text-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics:1.4.3] /home/rafal/.gradle/caches/transforms-3/2eee6d420280da0db61dda6ab6f90608/transformed/jetified-ui-graphics-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-geometry:1.4.3] /home/rafal/.gradle/caches/transforms-3/b47e2b5479422c9980aede8fdcbc0636/transformed/jetified-ui-geometry-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.material:material:1.4.3] /home/rafal/.gradle/caches/transforms-3/430dae2ae90ec2b572ed2c5c94d45091/transformed/jetified-material-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple:1.4.3] /home/rafal/.gradle/caches/transforms-3/7e6fb642db52d62e32f88707472878e7/transformed/jetified-material-ripple-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-extended:1.4.3] /home/rafal/.gradle/caches/transforms-3/414655dafb60101a49fe83c319f7f74b/transformed/jetified-material-icons-extended-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-icons-core:1.4.3] /home/rafal/.gradle/caches/transforms-3/7f12aa33df9214b40da953d0da4cd47b/transformed/jetified-material-icons-core-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.0] /home/rafal/.gradle/caches/transforms-3/fe52134db8e379ea67e3931afe8b2844/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.0] /home/rafal/.gradle/caches/transforms-3/1062bc24ed52b2adfc7e26defaae8a32/transformed/jetified-activity-compose-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.3] /home/rafal/.gradle/caches/transforms-3/b3736f09dc0e08a57c6e8ed7ca2e627b/transformed/jetified-runtime-saveable-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime:1.4.3] /home/rafal/.gradle/caches/transforms-3/94eeeec4da789b8010c70ada835a0eba/transformed/jetified-runtime-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-livedata:1.4.3] /home/rafal/.gradle/caches/transforms-3/81da496edb43d45630cab7ecfdf940f9/transformed/jetified-runtime-livedata-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui:1.4.3] /home/rafal/.gradle/caches/transforms-3/ebe716cc979ef0529a8382853877422b/transformed/jetified-ui-1.4.3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rafal/.gradle/caches/transforms-3/f9b1be5173f23c44849744148cf76915/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/rafal/.gradle/caches/transforms-3/0fed0cab57fbb4a3bea1778c47e8fbe6/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/rafal/.gradle/caches/transforms-3/0d796697d4b26f1728cf333c573b6b70/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.3.6] /home/rafal/.gradle/caches/transforms-3/e13ff17444e66df050cf0ebf125f9f1d/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /home/rafal/.gradle/caches/transforms-3/3082efba10d933444ff302cc677ea5a6/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/rafal/.gradle/caches/transforms-3/92d099efa600b85448e75009794ad98e/transformed/jetified-emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/rafal/.gradle/caches/transforms-3/ae391f8fa1ee564f6a3ae3c7bf702564/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rafal/.gradle/caches/transforms-3/953c5835d38a9a0d2a4fd33c76a93a8f/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rafal/.gradle/caches/transforms-3/252cb3b825c3e9fc1ad89c5836f0fce3/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/rafal/.gradle/caches/transforms-3/2bc34371d46edde49b090bceff474a7c/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/rafal/.gradle/caches/transforms-3/1ab49f0d8b305e1392507c0067788a81/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/rafal/.gradle/caches/transforms-3/036c7fba06da0c0ae0966583a2a0434c/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/rafal/.gradle/caches/transforms-3/19fd3f7a9126f9bf9a71273e6cced4b3/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/rafal/.gradle/caches/transforms-3/368c31272b39c07f3103a040d373df1e/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/rafal/.gradle/caches/transforms-3/008b9ab9153156fc9b64e3f31175a187/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/rafal/.gradle/caches/transforms-3/639c2b47c3caa2d0e05764d45a6b4769/transformed/jetified-lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/rafal/.gradle/caches/transforms-3/95b30aff8307bffbc2bf38208d2e34c9/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/rafal/.gradle/caches/transforms-3/225a1fee53da172f931e57b1615e94f9/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/rafal/.gradle/caches/transforms-3/8f7ba0b4e0776096541d466968a3cb02/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rafal/.gradle/caches/transforms-3/3164d3cdc8cd75e376f1b8b3e3178a0d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rafal/.gradle/caches/transforms-3/9f55b42a8725b3b457c40f58818735da/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /home/rafal/.gradle/caches/transforms-3/af8d1e64108a98fbd312ea74500bbd29/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rafal/.gradle/caches/transforms-3/6f0a9734c0742ce9f48499180f54cd60/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rafal/.gradle/caches/transforms-3/77ed44536f5a4ed77d2a10b75b341423/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.browser:browser:1.4.0] /home/rafal/.gradle/caches/transforms-3/ac6054ed7112ab58d860755a42f24812/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rafal/.gradle/caches/transforms-3/8281f856dbb03b9b0fb5d996ace1d6d8/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rafal/.gradle/caches/transforms-3/dcb0b5189c6f2954101c05ddd0355a7b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/rafal/.gradle/caches/transforms-3/7fbe617457f7fbcc6d43a4668215397f/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/rafal/.gradle/caches/transforms-3/bedf3389fa7d86715edfa0f5e92a44e3/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/rafal/.gradle/caches/transforms-3/01bfca74499d6f84358b5e87ef0800e1/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/rafal/.gradle/caches/transforms-3/d92277e6e37a3c750fb95c936c267951/transformed/jetified-lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:15:1-33:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/rafal/.gradle/caches/transforms-3/5b567f3fd8ad4fd43531c064c3c62cec/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/rafal/.gradle/caches/transforms-3/9a57e580a0149b0378ef23557ce98760/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rafal/.gradle/caches/transforms-3/f66812e8908a359cdd46a3412dcb8f97/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rafal/.gradle/caches/transforms-3/9bd502db0acd16de8195d0f29200cb10/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.1.5] /home/rafal/.gradle/caches/transforms-3/4fefec9bfd9beffa02dd30b12b8c1000/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /home/rafal/.gradle/caches/transforms-3/61a0566c7de92a83c621b64c996af9ad/transformed/jetified-transport-api-3.1.0/AndroidManifest.xml:15:1-20:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rafal/.gradle/caches/transforms-3/7bd9b4c398567638d9b4b5a8c1129f08/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rafal/.gradle/caches/transforms-3/1aa60a48f81d95fc1595f1b5ef499335/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rafal/.gradle/caches/transforms-3/a4adccfc7a36cb74053b7df8a1d3c1b4/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rafal/.gradle/caches/transforms-3/c7c0b744d517bcac7404c8d4e3cc7d7b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rafal/.gradle/caches/transforms-3/300cdbba0afa863a8c14de3d43e0b683/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rafal/.gradle/caches/transforms-3/5d0982a5d5d73158378eba80acdd70c1/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/rafal/.gradle/caches/transforms-3/6075572f83dde95501cb1e68f9a08a8b/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/rafal/.gradle/caches/transforms-3/5e5d5e386ad20009a6b855df577ca70b/transformed/exifinterface-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [io.grpc:grpc-android:1.52.1] /home/rafal/.gradle/caches/transforms-3/5ef506c44047432d00c001d36b53e505/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/rafal/.gradle/caches/transforms-3/f6884eeb016eb117a006e0acb62d5f81/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
+	package
+		INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:22:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] /home/rafal/.gradle/caches/transforms-3/5ef506c44047432d00c001d36b53e505/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] /home/rafal/.gradle/caches/transforms-3/5ef506c44047432d00c001d36b53e505/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:7:22-76
+application
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:9:5-40:19
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:9:5-40:19
+MERGED from [com.google.android.material:material:1.10.0] /home/rafal/.gradle/caches/transforms-3/0f602b23854e981499d9b7e707b74bd0/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.10.0] /home/rafal/.gradle/caches/transforms-3/0f602b23854e981499d9b7e707b74bd0/transformed/material-1.10.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:28:5-73:19
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:26:5-37:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:21:5-32:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:21:5-32:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:8:5-16:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rafal/.gradle/caches/transforms-3/346de590d57aacd737ec5a8f35032610/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rafal/.gradle/caches/transforms-3/346de590d57aacd737ec5a8f35032610/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/6960490b569c63f8a6cfe265a30fe67f/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/6960490b569c63f8a6cfe265a30fe67f/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:21:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.play:integrity:1.1.0] /home/rafal/.gradle/caches/transforms-3/16f30c1d7b7accd09873bd03c07ff2fe/transformed/jetified-integrity-1.1.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.play:integrity:1.1.0] /home/rafal/.gradle/caches/transforms-3/16f30c1d7b7accd09873bd03c07ff2fe/transformed/jetified-integrity-1.1.0/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rafal/.gradle/caches/transforms-3/ff632074e9e16dfb618ce7641811e941/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rafal/.gradle/caches/transforms-3/ff632074e9e16dfb618ce7641811e941/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:22:5-39:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/681d43ffbb0eee1b58dd1ca9e814f28f/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/681d43ffbb0eee1b58dd1ca9e814f28f/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rafal/.gradle/caches/transforms-3/f9b1be5173f23c44849744148cf76915/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rafal/.gradle/caches/transforms-3/f9b1be5173f23c44849744148cf76915/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/rafal/.gradle/caches/transforms-3/0fed0cab57fbb4a3bea1778c47e8fbe6/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/rafal/.gradle/caches/transforms-3/0fed0cab57fbb4a3bea1778c47e8fbe6/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/rafal/.gradle/caches/transforms-3/0d796697d4b26f1728cf333c573b6b70/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/rafal/.gradle/caches/transforms-3/0d796697d4b26f1728cf333c573b6b70/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:23:5-31:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rafal/.gradle/caches/transforms-3/1aa60a48f81d95fc1595f1b5ef499335/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rafal/.gradle/caches/transforms-3/1aa60a48f81d95fc1595f1b5ef499335/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:14:9-41
+	android:fullBackupContent
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:12:9-54
+	android:roundIcon
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:17:9-49
+	android:dataExtractionRules
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:11:9-65
+activity#com.g3spy.parent.MainActivity
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:21:9-29:20
+	android:exported
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:23:13-36
+	android:theme
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:24:13-53
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:22:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:25:13-28:29
+action#android.intent.action.MAIN
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:27:27-74
+service#com.g3spy.parent.service.FirebaseMessagingService
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:32:9-38:19
+	android:exported
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:33:13-61
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:35:13-37:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:36:17-78
+	android:name
+		ADDED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml:36:25-75
+uses-sdk
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+MERGED from [io.coil-kt:coil-compose:2.4.0] /home/rafal/.gradle/caches/transforms-3/bf028779f24d48ae1eea547190ea109a/transformed/jetified-coil-compose-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.4.0] /home/rafal/.gradle/caches/transforms-3/bf028779f24d48ae1eea547190ea109a/transformed/jetified-coil-compose-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.10.0] /home/rafal/.gradle/caches/transforms-3/0f602b23854e981499d9b7e707b74bd0/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.10.0] /home/rafal/.gradle/caches/transforms-3/0f602b23854e981499d9b7e707b74bd0/transformed/material-1.10.0/AndroidManifest.xml:20:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.4.0] /home/rafal/.gradle/caches/transforms-3/5384ab016eb7d52f12d3a9ea779285d1/transformed/jetified-coil-compose-base-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.4.0] /home/rafal/.gradle/caches/transforms-3/5384ab016eb7d52f12d3a9ea779285d1/transformed/jetified-coil-compose-base-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.4.0] /home/rafal/.gradle/caches/transforms-3/c73b4e63824221efb1cebd2b0d566ec7/transformed/jetified-coil-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.4.0] /home/rafal/.gradle/caches/transforms-3/c73b4e63824221efb1cebd2b0d566ec7/transformed/jetified-coil-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:21:5-23:64
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] /home/rafal/.gradle/caches/transforms-3/fcc7a4409f6776d307d224299fd6e243/transformed/jetified-accompanist-drawablepainter-0.30.1/AndroidManifest.xml:21:5-23:42
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] /home/rafal/.gradle/caches/transforms-3/fcc7a4409f6776d307d224299fd6e243/transformed/jetified-accompanist-drawablepainter-0.30.1/AndroidManifest.xml:21:5-23:42
+MERGED from [androidx.compose.material3:material3:1.0.0] /home/rafal/.gradle/caches/transforms-3/5ea4554611e0ca90e392f67a72dcb175/transformed/jetified-material3-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.0.0] /home/rafal/.gradle/caches/transforms-3/5ea4554611e0ca90e392f67a72dcb175/transformed/jetified-material3-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rafal/.gradle/caches/transforms-3/346de590d57aacd737ec5a8f35032610/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/rafal/.gradle/caches/transforms-3/346de590d57aacd737ec5a8f35032610/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.coil-kt:coil-base:2.4.0] /home/rafal/.gradle/caches/transforms-3/380cc7587847fbf82af595c9a0482e47/transformed/jetified-coil-base-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.4.0] /home/rafal/.gradle/caches/transforms-3/380cc7587847fbf82af595c9a0482e47/transformed/jetified-coil-base-2.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rafal/.gradle/caches/transforms-3/7c661062ef5d3f431af52f6528ffce6d/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/rafal/.gradle/caches/transforms-3/7c661062ef5d3f431af52f6528ffce6d/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rafal/.gradle/caches/transforms-3/d6be66685009447cefd9fff1674da331/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/rafal/.gradle/caches/transforms-3/d6be66685009447cefd9fff1674da331/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.6.0] /home/rafal/.gradle/caches/transforms-3/40a0d72367509182aea85b5897d3638a/transformed/navigation-common-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.6.0] /home/rafal/.gradle/caches/transforms-3/40a0d72367509182aea85b5897d3638a/transformed/navigation-common-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.6.0] /home/rafal/.gradle/caches/transforms-3/0f9db480a95d68f2c9da4a7582abd17d/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.6.0] /home/rafal/.gradle/caches/transforms-3/0f9db480a95d68f2c9da4a7582abd17d/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /home/rafal/.gradle/caches/transforms-3/51514ce14207fa35847a552e3fa6e76b/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /home/rafal/.gradle/caches/transforms-3/51514ce14207fa35847a552e3fa6e76b/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.6.0] /home/rafal/.gradle/caches/transforms-3/cea013171744432dc47f9eb784075a61/transformed/navigation-runtime-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.6.0] /home/rafal/.gradle/caches/transforms-3/cea013171744432dc47f9eb784075a61/transformed/navigation-runtime-ktx-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-compose:2.6.0] /home/rafal/.gradle/caches/transforms-3/df28ffddae12ed0103ea7a18cb03bbaa/transformed/jetified-navigation-compose-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-compose:2.6.0] /home/rafal/.gradle/caches/transforms-3/df28ffddae12ed0103ea7a18cb03bbaa/transformed/jetified-navigation-compose-2.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rafal/.gradle/caches/transforms-3/637f40aeb579fc9269d5f7f451a628b7/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/rafal/.gradle/caches/transforms-3/637f40aeb579fc9269d5f7f451a628b7/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/rafal/.gradle/caches/transforms-3/6785989fe16d33e08af956f7a2420454/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /home/rafal/.gradle/caches/transforms-3/6785989fe16d33e08af956f7a2420454/transformed/jetified-play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/rafal/.gradle/caches/transforms-3/bdc04e826a62d733d9dd879b8e19aab8/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-database-collection:18.0.1] /home/rafal/.gradle/caches/transforms-3/bdc04e826a62d733d9dd879b8e19aab8/transformed/jetified-firebase-database-collection-18.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/6960490b569c63f8a6cfe265a30fe67f/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/6960490b569c63f8a6cfe265a30fe67f/transformed/jetified-firebase-appcheck-interop-17.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /home/rafal/.gradle/caches/transforms-3/a6306ca2d6f884a8ba6939bfbff02261/transformed/jetified-recaptcha-18.1.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.play:integrity:1.1.0] /home/rafal/.gradle/caches/transforms-3/16f30c1d7b7accd09873bd03c07ff2fe/transformed/jetified-integrity-1.1.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.play:integrity:1.1.0] /home/rafal/.gradle/caches/transforms-3/16f30c1d7b7accd09873bd03c07ff2fe/transformed/jetified-integrity-1.1.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rafal/.gradle/caches/transforms-3/ff632074e9e16dfb618ce7641811e941/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /home/rafal/.gradle/caches/transforms-3/ff632074e9e16dfb618ce7641811e941/transformed/jetified-firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:19:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/681d43ffbb0eee1b58dd1ca9e814f28f/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /home/rafal/.gradle/caches/transforms-3/681d43ffbb0eee1b58dd1ca9e814f28f/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /home/rafal/.gradle/caches/transforms-3/5e652990a4b53508baa948c80e87c41a/transformed/jetified-firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] /home/rafal/.gradle/caches/transforms-3/5e652990a4b53508baa948c80e87c41a/transformed/jetified-firebase-installations-interop-17.1.1/AndroidManifest.xml:17:5-44
+MERGED from [androidx.compose.animation:animation-core:1.4.3] /home/rafal/.gradle/caches/transforms-3/ccabe704109554fa4d5adbcf4f5b9a24/transformed/jetified-animation-core-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core:1.4.3] /home/rafal/.gradle/caches/transforms-3/ccabe704109554fa4d5adbcf4f5b9a24/transformed/jetified-animation-core-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.4.3] /home/rafal/.gradle/caches/transforms-3/38cc657189fe01f247436750b9baf6f2/transformed/jetified-animation-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation:1.4.3] /home/rafal/.gradle/caches/transforms-3/38cc657189fe01f247436750b9baf6f2/transformed/jetified-animation-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.3] /home/rafal/.gradle/caches/transforms-3/f17c60ab1aab03aba1a90710098aee54/transformed/jetified-foundation-layout-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation-layout:1.4.3] /home/rafal/.gradle/caches/transforms-3/f17c60ab1aab03aba1a90710098aee54/transformed/jetified-foundation-layout-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.4.3] /home/rafal/.gradle/caches/transforms-3/c9c52aad3cbbcdab31e6ea31bfdc0856/transformed/jetified-foundation-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.foundation:foundation:1.4.3] /home/rafal/.gradle/caches/transforms-3/c9c52aad3cbbcdab31e6ea31bfdc0856/transformed/jetified-foundation-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.4.3] /home/rafal/.gradle/caches/transforms-3/41fba7b019c2b3e10f03b70b132d42e8/transformed/jetified-ui-tooling-data-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data:1.4.3] /home/rafal/.gradle/caches/transforms-3/41fba7b019c2b3e10f03b70b132d42e8/transformed/jetified-ui-tooling-data-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.4.3] /home/rafal/.gradle/caches/transforms-3/d7f77d71720151feb8aed21e477c66fb/transformed/jetified-ui-tooling-preview-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview:1.4.3] /home/rafal/.gradle/caches/transforms-3/d7f77d71720151feb8aed21e477c66fb/transformed/jetified-ui-tooling-preview-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.4.3] /home/rafal/.gradle/caches/transforms-3/bb5e0d2f07c908801de5bad875675242/transformed/jetified-ui-util-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-util:1.4.3] /home/rafal/.gradle/caches/transforms-3/bb5e0d2f07c908801de5bad875675242/transformed/jetified-ui-util-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.4.3] /home/rafal/.gradle/caches/transforms-3/47c2656cab33a3a374341ab49f7aa890/transformed/jetified-ui-unit-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit:1.4.3] /home/rafal/.gradle/caches/transforms-3/47c2656cab33a3a374341ab49f7aa890/transformed/jetified-ui-unit-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.4.3] /home/rafal/.gradle/caches/transforms-3/62bf6f14695221154988f78aadf4cd06/transformed/jetified-ui-text-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-text:1.4.3] /home/rafal/.gradle/caches/transforms-3/62bf6f14695221154988f78aadf4cd06/transformed/jetified-ui-text-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.4.3] /home/rafal/.gradle/caches/transforms-3/2eee6d420280da0db61dda6ab6f90608/transformed/jetified-ui-graphics-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics:1.4.3] /home/rafal/.gradle/caches/transforms-3/2eee6d420280da0db61dda6ab6f90608/transformed/jetified-ui-graphics-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.4.3] /home/rafal/.gradle/caches/transforms-3/b47e2b5479422c9980aede8fdcbc0636/transformed/jetified-ui-geometry-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-geometry:1.4.3] /home/rafal/.gradle/caches/transforms-3/b47e2b5479422c9980aede8fdcbc0636/transformed/jetified-ui-geometry-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.4.3] /home/rafal/.gradle/caches/transforms-3/430dae2ae90ec2b572ed2c5c94d45091/transformed/jetified-material-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material:1.4.3] /home/rafal/.gradle/caches/transforms-3/430dae2ae90ec2b572ed2c5c94d45091/transformed/jetified-material-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.4.3] /home/rafal/.gradle/caches/transforms-3/7e6fb642db52d62e32f88707472878e7/transformed/jetified-material-ripple-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple:1.4.3] /home/rafal/.gradle/caches/transforms-3/7e6fb642db52d62e32f88707472878e7/transformed/jetified-material-ripple-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-extended:1.4.3] /home/rafal/.gradle/caches/transforms-3/414655dafb60101a49fe83c319f7f74b/transformed/jetified-material-icons-extended-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-extended:1.4.3] /home/rafal/.gradle/caches/transforms-3/414655dafb60101a49fe83c319f7f74b/transformed/jetified-material-icons-extended-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.4.3] /home/rafal/.gradle/caches/transforms-3/7f12aa33df9214b40da953d0da4cd47b/transformed/jetified-material-icons-core-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-icons-core:1.4.3] /home/rafal/.gradle/caches/transforms-3/7f12aa33df9214b40da953d0da4cd47b/transformed/jetified-material-icons-core-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /home/rafal/.gradle/caches/transforms-3/fe52134db8e379ea67e3931afe8b2844/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.0] /home/rafal/.gradle/caches/transforms-3/fe52134db8e379ea67e3931afe8b2844/transformed/jetified-activity-ktx-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.0] /home/rafal/.gradle/caches/transforms-3/1062bc24ed52b2adfc7e26defaae8a32/transformed/jetified-activity-compose-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.0] /home/rafal/.gradle/caches/transforms-3/1062bc24ed52b2adfc7e26defaae8a32/transformed/jetified-activity-compose-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.3] /home/rafal/.gradle/caches/transforms-3/b3736f09dc0e08a57c6e8ed7ca2e627b/transformed/jetified-runtime-saveable-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable:1.4.3] /home/rafal/.gradle/caches/transforms-3/b3736f09dc0e08a57c6e8ed7ca2e627b/transformed/jetified-runtime-saveable-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.4.3] /home/rafal/.gradle/caches/transforms-3/94eeeec4da789b8010c70ada835a0eba/transformed/jetified-runtime-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime:1.4.3] /home/rafal/.gradle/caches/transforms-3/94eeeec4da789b8010c70ada835a0eba/transformed/jetified-runtime-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.4.3] /home/rafal/.gradle/caches/transforms-3/81da496edb43d45630cab7ecfdf940f9/transformed/jetified-runtime-livedata-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-livedata:1.4.3] /home/rafal/.gradle/caches/transforms-3/81da496edb43d45630cab7ecfdf940f9/transformed/jetified-runtime-livedata-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.4.3] /home/rafal/.gradle/caches/transforms-3/ebe716cc979ef0529a8382853877422b/transformed/jetified-ui-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui:1.4.3] /home/rafal/.gradle/caches/transforms-3/ebe716cc979ef0529a8382853877422b/transformed/jetified-ui-1.4.3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rafal/.gradle/caches/transforms-3/f9b1be5173f23c44849744148cf76915/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/rafal/.gradle/caches/transforms-3/f9b1be5173f23c44849744148cf76915/transformed/jetified-play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/rafal/.gradle/caches/transforms-3/0fed0cab57fbb4a3bea1778c47e8fbe6/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /home/rafal/.gradle/caches/transforms-3/0fed0cab57fbb4a3bea1778c47e8fbe6/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/rafal/.gradle/caches/transforms-3/0d796697d4b26f1728cf333c573b6b70/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /home/rafal/.gradle/caches/transforms-3/0d796697d4b26f1728cf333c573b6b70/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.3.6] /home/rafal/.gradle/caches/transforms-3/e13ff17444e66df050cf0ebf125f9f1d/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/rafal/.gradle/caches/transforms-3/e13ff17444e66df050cf0ebf125f9f1d/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /home/rafal/.gradle/caches/transforms-3/3082efba10d933444ff302cc677ea5a6/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /home/rafal/.gradle/caches/transforms-3/3082efba10d933444ff302cc677ea5a6/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/rafal/.gradle/caches/transforms-3/92d099efa600b85448e75009794ad98e/transformed/jetified-emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/rafal/.gradle/caches/transforms-3/92d099efa600b85448e75009794ad98e/transformed/jetified-emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/rafal/.gradle/caches/transforms-3/ae391f8fa1ee564f6a3ae3c7bf702564/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] /home/rafal/.gradle/caches/transforms-3/ae391f8fa1ee564f6a3ae3c7bf702564/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rafal/.gradle/caches/transforms-3/953c5835d38a9a0d2a4fd33c76a93a8f/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/rafal/.gradle/caches/transforms-3/953c5835d38a9a0d2a4fd33c76a93a8f/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rafal/.gradle/caches/transforms-3/252cb3b825c3e9fc1ad89c5836f0fce3/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/rafal/.gradle/caches/transforms-3/252cb3b825c3e9fc1ad89c5836f0fce3/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rafal/.gradle/caches/transforms-3/2bc34371d46edde49b090bceff474a7c/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/rafal/.gradle/caches/transforms-3/2bc34371d46edde49b090bceff474a7c/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/rafal/.gradle/caches/transforms-3/1ab49f0d8b305e1392507c0067788a81/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] /home/rafal/.gradle/caches/transforms-3/1ab49f0d8b305e1392507c0067788a81/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/rafal/.gradle/caches/transforms-3/036c7fba06da0c0ae0966583a2a0434c/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] /home/rafal/.gradle/caches/transforms-3/036c7fba06da0c0ae0966583a2a0434c/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/rafal/.gradle/caches/transforms-3/19fd3f7a9126f9bf9a71273e6cced4b3/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/rafal/.gradle/caches/transforms-3/19fd3f7a9126f9bf9a71273e6cced4b3/transformed/jetified-savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/rafal/.gradle/caches/transforms-3/368c31272b39c07f3103a040d373df1e/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/rafal/.gradle/caches/transforms-3/368c31272b39c07f3103a040d373df1e/transformed/jetified-savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/rafal/.gradle/caches/transforms-3/008b9ab9153156fc9b64e3f31175a187/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] /home/rafal/.gradle/caches/transforms-3/008b9ab9153156fc9b64e3f31175a187/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/rafal/.gradle/caches/transforms-3/639c2b47c3caa2d0e05764d45a6b4769/transformed/jetified-lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2] /home/rafal/.gradle/caches/transforms-3/639c2b47c3caa2d0e05764d45a6b4769/transformed/jetified-lifecycle-viewmodel-compose-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/rafal/.gradle/caches/transforms-3/95b30aff8307bffbc2bf38208d2e34c9/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] /home/rafal/.gradle/caches/transforms-3/95b30aff8307bffbc2bf38208d2e34c9/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/rafal/.gradle/caches/transforms-3/225a1fee53da172f931e57b1615e94f9/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/rafal/.gradle/caches/transforms-3/225a1fee53da172f931e57b1615e94f9/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /home/rafal/.gradle/caches/transforms-3/8f7ba0b4e0776096541d466968a3cb02/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/rafal/.gradle/caches/transforms-3/8f7ba0b4e0776096541d466968a3cb02/transformed/jetified-core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rafal/.gradle/caches/transforms-3/3164d3cdc8cd75e376f1b8b3e3178a0d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/rafal/.gradle/caches/transforms-3/3164d3cdc8cd75e376f1b8b3e3178a0d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rafal/.gradle/caches/transforms-3/9f55b42a8725b3b457c40f58818735da/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/rafal/.gradle/caches/transforms-3/9f55b42a8725b3b457c40f58818735da/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/rafal/.gradle/caches/transforms-3/af8d1e64108a98fbd312ea74500bbd29/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /home/rafal/.gradle/caches/transforms-3/af8d1e64108a98fbd312ea74500bbd29/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rafal/.gradle/caches/transforms-3/6f0a9734c0742ce9f48499180f54cd60/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/rafal/.gradle/caches/transforms-3/6f0a9734c0742ce9f48499180f54cd60/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rafal/.gradle/caches/transforms-3/77ed44536f5a4ed77d2a10b75b341423/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/rafal/.gradle/caches/transforms-3/77ed44536f5a4ed77d2a10b75b341423/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /home/rafal/.gradle/caches/transforms-3/ac6054ed7112ab58d860755a42f24812/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /home/rafal/.gradle/caches/transforms-3/ac6054ed7112ab58d860755a42f24812/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rafal/.gradle/caches/transforms-3/8281f856dbb03b9b0fb5d996ace1d6d8/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/rafal/.gradle/caches/transforms-3/8281f856dbb03b9b0fb5d996ace1d6d8/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rafal/.gradle/caches/transforms-3/dcb0b5189c6f2954101c05ddd0355a7b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/rafal/.gradle/caches/transforms-3/dcb0b5189c6f2954101c05ddd0355a7b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/rafal/.gradle/caches/transforms-3/7fbe617457f7fbcc6d43a4668215397f/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/rafal/.gradle/caches/transforms-3/7fbe617457f7fbcc6d43a4668215397f/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/rafal/.gradle/caches/transforms-3/bedf3389fa7d86715edfa0f5e92a44e3/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/rafal/.gradle/caches/transforms-3/bedf3389fa7d86715edfa0f5e92a44e3/transformed/jetified-autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/rafal/.gradle/caches/transforms-3/01bfca74499d6f84358b5e87ef0800e1/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] /home/rafal/.gradle/caches/transforms-3/01bfca74499d6f84358b5e87ef0800e1/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/rafal/.gradle/caches/transforms-3/d92277e6e37a3c750fb95c936c267951/transformed/jetified-lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] /home/rafal/.gradle/caches/transforms-3/d92277e6e37a3c750fb95c936c267951/transformed/jetified-lifecycle-runtime-ktx-2.6.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/rafal/.gradle/caches/transforms-3/5b567f3fd8ad4fd43531c064c3c62cec/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /home/rafal/.gradle/caches/transforms-3/5b567f3fd8ad4fd43531c064c3c62cec/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/rafal/.gradle/caches/transforms-3/9a57e580a0149b0378ef23557ce98760/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/rafal/.gradle/caches/transforms-3/9a57e580a0149b0378ef23557ce98760/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rafal/.gradle/caches/transforms-3/f66812e8908a359cdd46a3412dcb8f97/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/rafal/.gradle/caches/transforms-3/f66812e8908a359cdd46a3412dcb8f97/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rafal/.gradle/caches/transforms-3/9bd502db0acd16de8195d0f29200cb10/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/rafal/.gradle/caches/transforms-3/9bd502db0acd16de8195d0f29200cb10/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] /home/rafal/.gradle/caches/transforms-3/4fefec9bfd9beffa02dd30b12b8c1000/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-components:17.1.5] /home/rafal/.gradle/caches/transforms-3/4fefec9bfd9beffa02dd30b12b8c1000/transformed/jetified-firebase-components-17.1.5/AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /home/rafal/.gradle/caches/transforms-3/61a0566c7de92a83c621b64c996af9ad/transformed/jetified-transport-api-3.1.0/AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] /home/rafal/.gradle/caches/transforms-3/61a0566c7de92a83c621b64c996af9ad/transformed/jetified-transport-api-3.1.0/AndroidManifest.xml:18:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rafal/.gradle/caches/transforms-3/7bd9b4c398567638d9b4b5a8c1129f08/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/rafal/.gradle/caches/transforms-3/7bd9b4c398567638d9b4b5a8c1129f08/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rafal/.gradle/caches/transforms-3/1aa60a48f81d95fc1595f1b5ef499335/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/rafal/.gradle/caches/transforms-3/1aa60a48f81d95fc1595f1b5ef499335/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rafal/.gradle/caches/transforms-3/a4adccfc7a36cb74053b7df8a1d3c1b4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/rafal/.gradle/caches/transforms-3/a4adccfc7a36cb74053b7df8a1d3c1b4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rafal/.gradle/caches/transforms-3/c7c0b744d517bcac7404c8d4e3cc7d7b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/rafal/.gradle/caches/transforms-3/c7c0b744d517bcac7404c8d4e3cc7d7b/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rafal/.gradle/caches/transforms-3/300cdbba0afa863a8c14de3d43e0b683/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/rafal/.gradle/caches/transforms-3/300cdbba0afa863a8c14de3d43e0b683/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rafal/.gradle/caches/transforms-3/5d0982a5d5d73158378eba80acdd70c1/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/rafal/.gradle/caches/transforms-3/5d0982a5d5d73158378eba80acdd70c1/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/rafal/.gradle/caches/transforms-3/6075572f83dde95501cb1e68f9a08a8b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/rafal/.gradle/caches/transforms-3/6075572f83dde95501cb1e68f9a08a8b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/rafal/.gradle/caches/transforms-3/5e5d5e386ad20009a6b855df577ca70b/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] /home/rafal/.gradle/caches/transforms-3/5e5d5e386ad20009a6b855df577ca70b/transformed/exifinterface-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [io.grpc:grpc-android:1.52.1] /home/rafal/.gradle/caches/transforms-3/5ef506c44047432d00c001d36b53e505/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
+MERGED from [io.grpc:grpc-android:1.52.1] /home/rafal/.gradle/caches/transforms-3/5ef506c44047432d00c001d36b53e505/transformed/jetified-grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/rafal/.gradle/caches/transforms-3/f6884eeb016eb117a006e0acb62d5f81/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /home/rafal/.gradle/caches/transforms-3/f6884eeb016eb117a006e0acb62d5f81/transformed/jetified-protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:23:9-61
+	android:targetSdkVersion
+		INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+	tools:ignore
+		ADDED from [com.google.accompanist:accompanist-drawablepainter:0.30.1] /home/rafal/.gradle/caches/transforms-3/fcc7a4409f6776d307d224299fd6e243/transformed/jetified-accompanist-drawablepainter-0.30.1/AndroidManifest.xml:23:9-39
+	android:minSdkVersion
+		INJECTED from /home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/AndroidManifest.xml
+activity#com.google.firebase.auth.internal.GenericIdpActivity
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:29:9-46:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:31:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:33:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:32:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:34:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:30:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
+activity#com.google.firebase.auth.internal.RecaptchaActivity
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:47:9-64:20
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:49:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:51:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:50:13-36
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:52:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:48:13-79
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:recaptcha
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:53:13-63:29
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:66:9-72:19
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:27:9-36:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:22:9-31:19
+MERGED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:22:9-31:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:24:9-30:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:68:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:67:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:69:13-71:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:71:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /home/rafal/.gradle/caches/transforms-3/7cb52910777e49b5b58810f47f779ba7/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:70:17-109
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:18:17-122
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:24.10.0] /home/rafal/.gradle/caches/transforms-3/5945883a127260b2b76f90ab42102c23/transformed/jetified-firebase-firestore-24.10.0/AndroidManifest.xml:21:17-111
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:5-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:23:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.1.0] /home/rafal/.gradle/caches/transforms-3/8824023a8000568f97ebd2bbd636f03f/transformed/jetified-play-services-cloud-messaging-17.1.0/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:26:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:29:9-40:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:31:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:32:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:30:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:33:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:34:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:34:25-78
+meta-data#com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:37:13-39:40
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:39:17-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:38:17-92
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:46:9-53:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:49:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:48:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:47:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:57:13-59:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:59:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:58:17-122
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:60:13-62:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:62:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.4.0] /home/rafal/.gradle/caches/transforms-3/9ef1021eb65fe95f97e036af35c40bac/transformed/jetified-firebase-messaging-23.4.0/AndroidManifest.xml:61:17-119
+meta-data#com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:31:17-118
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.3.0] /home/rafal/.gradle/caches/transforms-3/a160ed800a5c241a897e4d4830413c14/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:34:17-107
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.2.0] /home/rafal/.gradle/caches/transforms-3/79bd06aa0ac142993149a6942b680f87/transformed/jetified-firebase-installations-17.2.0/AndroidManifest.xml:19:17-127
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:25:13-27:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:26:17-120
+meta-data#com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar
+ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-appcheck:17.1.1] /home/rafal/.gradle/caches/transforms-3/325bf0e6af77c15ec81f3b1f218f61da/transformed/jetified-firebase-appcheck-17.1.1/AndroidManifest.xml:29:17-117
+meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
+ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common-ktx:20.4.2] /home/rafal/.gradle/caches/transforms-3/4600de761d4ef2f6e5cbd1091a659f15/transformed/jetified-firebase-common-ktx-20.4.2/AndroidManifest.xml:13:17-116
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.1.0] /home/rafal/.gradle/caches/transforms-3/86ad1e0e4ce529cc5bd05653e96be41e/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /home/rafal/.gradle/caches/transforms-3/15b962bb40c0b52cfee311a50258c99e/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:23:9-28:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:25:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:27:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:26:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:24:13-77
+meta-data#com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar
+ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:35:13-37:85
+	android:value
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:37:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.4.2] /home/rafal/.gradle/caches/transforms-3/925a0535859a670925214a66606ae259/transformed/jetified-firebase-common-20.4.2/AndroidManifest.xml:36:17-109
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/rafal/.gradle/caches/transforms-3/647c11da2c5ec50276425ce81670ac4d/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling:1.4.3] /home/rafal/.gradle/caches/transforms-3/5ff91367867d7b5a782f916372a9a3ed/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:24:13-71
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.1.0] /home/rafal/.gradle/caches/transforms-3/c1489b23215522c09475bcbf1da313c6/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/rafal/.gradle/caches/transforms-3/dba3917742697ce2fa9902b66dbc6c4f/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/rafal/.gradle/caches/transforms-3/f2bf86f23625594376f675091be138e9/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/rafal/.gradle/caches/transforms-3/39f5ff08d5abc0c1a3923a827cc336c0/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.g3spy.parent.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.g3spy.parent.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/rafal/.gradle/caches/transforms-3/65a64b0cda7de3c039551bdbf0e0d43f/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.7] /home/rafal/.gradle/caches/transforms-3/d21b80d6832d5c805490f7b1a6c03f88/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] /home/rafal/.gradle/caches/transforms-3/ee079834625f7b572e91c3f698c4aef0/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.8] /home/rafal/.gradle/caches/transforms-3/64913818011779d2d9edeb8350383a6d/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/rafal/.gradle/caches/transforms-3/a523ee8bbb2de9664c407a6649a34438/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

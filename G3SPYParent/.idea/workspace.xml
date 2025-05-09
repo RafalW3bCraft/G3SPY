@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9dc70090-03cb-49dc-90fe-42892de39626" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/G3SPY.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.gradle/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/appInsightsSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../G3SPYChild/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FIREBASE_SETUP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../FIREBASE_SETUP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/KeyloggingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/KeyloggingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/receivers/BootReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/receivers/BootReceiver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/services/CallLogService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/services/CallLogService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/services/LocationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/services/LocationService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/services/SmsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/services/SmsService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/util/PermissionUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/java/com/g3spy/child/util/PermissionUtil.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/xml/accessibility_service_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/xml/accessibility_service_config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/xml/backup_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G3SPYChild/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../G3SPYChild/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/model/MonitoringData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/model/MonitoringData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/ui/theme/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/ui/theme/Color.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/ui/theme/Theme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/ui/theme/Theme.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/ui/theme/Type.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/ui/theme/Type.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/viewmodel/MonitoringViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/g3spy/parent/viewmodel/MonitoringViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HOW_IT_WORKS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PROJECT_STATUS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../attached_assets/Pasted-here-is-the-full-breakdown-of-languages-used-development-structure-and-step-by-step-instructions-t-1746785568761.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../generated-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=cd14e0e2)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2wsCwioKCeJRx7sbmb82B2DE9B3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.app.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/rafal/Downloads/G3SPY/G3SPYChild",
+    "settings.editor.selected.configurable": "device.mirroring"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="G3SPYParent.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dc70090-03cb-49dc-90fe-42892de39626" name="Changes" comment="" />
+      <created>1746821139471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746821139471</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.g3spy.child.app-mergeDebugResources-60:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/rafal/.gradle/caches/transforms-3/1afbeb9947ae3abc08ccc431b487f3e9/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

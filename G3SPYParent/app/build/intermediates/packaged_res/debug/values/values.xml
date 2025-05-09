@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="action_locate">Locate</string>
+    <string name="action_record">Record</string>
+    <string name="action_screenshot">Screenshot</string>
+    <string name="app_name">G3SPY Parent</string>
+    <string name="audio_recordings">AUDIO RECORDINGS</string>
+    <string name="calls_title">CALL LOGS</string>
+    <string name="capture_screenshot">CAPTURE SCREENSHOT</string>
+    <string name="current_location">CURRENT LOCATION</string>
+    <string name="dashboard_title">SYSTEM OVERVIEW</string>
+    <string name="device_status">CHILD DEVICE STATUS</string>
+    <string name="firebase_database_url" translatable="false">https://g3spy-project-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">123456789012</string>
+    <string name="google_api_key" translatable="false">AIzaSyDummyApiKeyForG3SPYParentApp</string>
+    <string name="google_app_id" translatable="false">1:123456789012:android:def456abc123</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDummyApiKeyForG3SPYParentApp</string>
+    <string name="google_storage_bucket" translatable="false">g3spy-project.appspot.com</string>
+    <string name="location_history">LOCATION HISTORY</string>
+    <string name="location_title">LOCATION TRACKING</string>
+    <string name="media_title">MEDIA CAPTURES</string>
+    <string name="messages_title">SMS MESSAGES</string>
+    <string name="no_calls">NO CALL DATA</string>
+    <string name="no_location_data">NO LOCATION DATA</string>
+    <string name="no_messages">NO MESSAGE DATA</string>
+    <string name="no_recordings">NO RECORDINGS</string>
+    <string name="no_screenshots">NO SCREENSHOTS</string>
+    <string name="project_id" translatable="false">g3spy-project</string>
+    <string name="quick_actions">QUICK ACTIONS</string>
+    <string name="recent_activities">RECENT ACTIVITIES</string>
+    <string name="refresh_data">REFRESH DATA</string>
+    <string name="scanning">SCANNING CHILD DEVICE</string>
+    <string name="screenshots">SCREENSHOTS</string>
+    <string name="setting_audio">Audio Recording</string>
+    <string name="setting_audio_desc">Enable remote microphone activation</string>
+    <string name="setting_call_alerts">Unknown Caller Alerts</string>
+    <string name="setting_call_alerts_desc">Alert on calls from unknown numbers</string>
+    <string name="setting_calls">Call Log Monitoring</string>
+    <string name="setting_calls_desc">Track all incoming and outgoing calls</string>
+    <string name="setting_location">Location Tracking</string>
+    <string name="setting_location_alerts">Location Alerts</string>
+    <string name="setting_location_alerts_desc">Get notified when child leaves designated area</string>
+    <string name="setting_location_desc">Track child device location in real-time</string>
+    <string name="setting_refresh_rate">Data Refresh Rate</string>
+    <string name="setting_refresh_rate_desc">How often to check for new data (minutes)</string>
+    <string name="setting_screenshot">Screenshot Capture</string>
+    <string name="setting_screenshot_desc">Enable remote screen capture</string>
+    <string name="setting_sms">SMS Monitoring</string>
+    <string name="setting_sms_alerts">Suspicious Message Alerts</string>
+    <string name="setting_sms_alerts_desc">Notify on potentially suspicious messages</string>
+    <string name="setting_sms_desc">Monitor incoming and outgoing SMS messages</string>
+    <string name="setting_storage">Storage Retention</string>
+    <string name="setting_storage_desc">How long to keep historic data (days)</string>
+    <string name="settings_monitoring">MONITORING SETTINGS</string>
+    <string name="settings_notification">NOTIFICATION SETTINGS</string>
+    <string name="settings_system">SYSTEM SETTINGS</string>
+    <string name="settings_title">SETTINGS</string>
+    <string name="start_recording">START RECORDING</string>
+    <string name="status_android_version">Android Version</string>
+    <string name="status_battery_level">Battery Level</string>
+    <string name="status_device_model">Device Model</string>
+    <string name="status_last_connection">Last Connection</string>
+    <string name="tab_calls">CALLS</string>
+    <string name="tab_dashboard">DASHBOARD</string>
+    <string name="tab_location">LOCATION</string>
+    <string name="tab_media">MEDIA</string>
+    <string name="tab_messages">MESSAGES</string>
+    <string name="tab_settings">SETTINGS</string>
+    <string name="update_location">UPDATE LOCATION</string>
+    <style name="Theme.G3SPYParent" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">@color/purple_700</item>
+        
+    </style>
+    <style name="Theme.G3SPYParent.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar"/>
+    <style name="Theme.G3SPYParent.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.G3SPYParent.PopupOverlay" parent="ThemeOverlay.Material3.Light"/>
+</resources>

@@ -1,0 +1,262 @@
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:52: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:53: Warning: A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.6.2 is available: 2.9.0 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:54: Warning: A newer version of androidx.activity:activity-compose than 1.7.2 is available: 1.10.1 [GradleDependency]
+    implementation 'androidx.activity:activity-compose:1.7.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:57: Warning: A newer version of androidx.compose:compose-bom than 2023.03.00 is available: 2025.05.00 [GradleDependency]
+    implementation platform('androidx.compose:compose-bom:2023.03.00')
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:62: Warning: A newer version of androidx.compose.material:material-icons-extended than 1.4.3 is available: 1.7.8 [GradleDependency]
+    implementation 'androidx.compose.material:material-icons-extended:1.4.3'  // Added material-icons-extended
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:64: Warning: A newer version of androidx.navigation:navigation-compose than 2.6.0 is available: 2.9.0 [GradleDependency]
+    implementation 'androidx.navigation:navigation-compose:2.6.0'  // Added navigation-compose
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:67: Warning: A newer version of com.google.android.material:material than 1.10.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.10.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:70: Warning: A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 33.13.0 [GradleDependency]
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:77: Warning: A newer version of com.google.android.gms:play-services-maps than 18.1.0 is available: 19.2.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:84: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:85: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/build.gradle:86: Warning: A newer version of androidx.compose:compose-bom than 2023.03.00 is available: 2025.05.00 [GradleDependency]
+    androidTestImplementation platform('androidx.compose:compose-bom:2023.03.00')
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/java/com/g3spy/parent/service/FirebaseMessagingService.kt:107: Warning: Unnecessary; SDK_INT is always >= 29 [ObsoleteSdkInt]
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/colors.xml:7: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:6: Warning: The resource R.string.tab_dashboard appears to be unused [UnusedResources]
+    <string name="tab_dashboard">DASHBOARD</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:7: Warning: The resource R.string.tab_location appears to be unused [UnusedResources]
+    <string name="tab_location">LOCATION</string>
+            ~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:8: Warning: The resource R.string.tab_messages appears to be unused [UnusedResources]
+    <string name="tab_messages">MESSAGES</string>
+            ~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:9: Warning: The resource R.string.tab_calls appears to be unused [UnusedResources]
+    <string name="tab_calls">CALLS</string>
+            ~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:10: Warning: The resource R.string.tab_media appears to be unused [UnusedResources]
+    <string name="tab_media">MEDIA</string>
+            ~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:11: Warning: The resource R.string.tab_settings appears to be unused [UnusedResources]
+    <string name="tab_settings">SETTINGS</string>
+            ~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:14: Warning: The resource R.string.dashboard_title appears to be unused [UnusedResources]
+    <string name="dashboard_title">SYSTEM OVERVIEW</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:15: Warning: The resource R.string.device_status appears to be unused [UnusedResources]
+    <string name="device_status">CHILD DEVICE STATUS</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:16: Warning: The resource R.string.recent_activities appears to be unused [UnusedResources]
+    <string name="recent_activities">RECENT ACTIVITIES</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:17: Warning: The resource R.string.quick_actions appears to be unused [UnusedResources]
+    <string name="quick_actions">QUICK ACTIONS</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:20: Warning: The resource R.string.status_last_connection appears to be unused [UnusedResources]
+    <string name="status_last_connection">Last Connection</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:21: Warning: The resource R.string.status_battery_level appears to be unused [UnusedResources]
+    <string name="status_battery_level">Battery Level</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:22: Warning: The resource R.string.status_device_model appears to be unused [UnusedResources]
+    <string name="status_device_model">Device Model</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:23: Warning: The resource R.string.status_android_version appears to be unused [UnusedResources]
+    <string name="status_android_version">Android Version</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:26: Warning: The resource R.string.action_screenshot appears to be unused [UnusedResources]
+    <string name="action_screenshot">Screenshot</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:27: Warning: The resource R.string.action_record appears to be unused [UnusedResources]
+    <string name="action_record">Record</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:28: Warning: The resource R.string.action_locate appears to be unused [UnusedResources]
+    <string name="action_locate">Locate</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:31: Warning: The resource R.string.location_title appears to be unused [UnusedResources]
+    <string name="location_title">LOCATION TRACKING</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:32: Warning: The resource R.string.current_location appears to be unused [UnusedResources]
+    <string name="current_location">CURRENT LOCATION</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:33: Warning: The resource R.string.location_history appears to be unused [UnusedResources]
+    <string name="location_history">LOCATION HISTORY</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:34: Warning: The resource R.string.no_location_data appears to be unused [UnusedResources]
+    <string name="no_location_data">NO LOCATION DATA</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:35: Warning: The resource R.string.update_location appears to be unused [UnusedResources]
+    <string name="update_location">UPDATE LOCATION</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:38: Warning: The resource R.string.messages_title appears to be unused [UnusedResources]
+    <string name="messages_title">SMS MESSAGES</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:39: Warning: The resource R.string.no_messages appears to be unused [UnusedResources]
+    <string name="no_messages">NO MESSAGE DATA</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:40: Warning: The resource R.string.refresh_data appears to be unused [UnusedResources]
+    <string name="refresh_data">REFRESH DATA</string>
+            ~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:43: Warning: The resource R.string.calls_title appears to be unused [UnusedResources]
+    <string name="calls_title">CALL LOGS</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:44: Warning: The resource R.string.no_calls appears to be unused [UnusedResources]
+    <string name="no_calls">NO CALL DATA</string>
+            ~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:47: Warning: The resource R.string.media_title appears to be unused [UnusedResources]
+    <string name="media_title">MEDIA CAPTURES</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:48: Warning: The resource R.string.screenshots appears to be unused [UnusedResources]
+    <string name="screenshots">SCREENSHOTS</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:49: Warning: The resource R.string.no_screenshots appears to be unused [UnusedResources]
+    <string name="no_screenshots">NO SCREENSHOTS</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:50: Warning: The resource R.string.capture_screenshot appears to be unused [UnusedResources]
+    <string name="capture_screenshot">CAPTURE SCREENSHOT</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:51: Warning: The resource R.string.audio_recordings appears to be unused [UnusedResources]
+    <string name="audio_recordings">AUDIO RECORDINGS</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:52: Warning: The resource R.string.no_recordings appears to be unused [UnusedResources]
+    <string name="no_recordings">NO RECORDINGS</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:53: Warning: The resource R.string.start_recording appears to be unused [UnusedResources]
+    <string name="start_recording">START RECORDING</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:56: Warning: The resource R.string.settings_title appears to be unused [UnusedResources]
+    <string name="settings_title">SETTINGS</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:57: Warning: The resource R.string.settings_monitoring appears to be unused [UnusedResources]
+    <string name="settings_monitoring">MONITORING SETTINGS</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:58: Warning: The resource R.string.settings_notification appears to be unused [UnusedResources]
+    <string name="settings_notification">NOTIFICATION SETTINGS</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:59: Warning: The resource R.string.settings_system appears to be unused [UnusedResources]
+    <string name="settings_system">SYSTEM SETTINGS</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:62: Warning: The resource R.string.setting_location appears to be unused [UnusedResources]
+    <string name="setting_location">Location Tracking</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:63: Warning: The resource R.string.setting_location_desc appears to be unused [UnusedResources]
+    <string name="setting_location_desc">Track child device location in real-time</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:64: Warning: The resource R.string.setting_sms appears to be unused [UnusedResources]
+    <string name="setting_sms">SMS Monitoring</string>
+            ~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:65: Warning: The resource R.string.setting_sms_desc appears to be unused [UnusedResources]
+    <string name="setting_sms_desc">Monitor incoming and outgoing SMS messages</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:66: Warning: The resource R.string.setting_calls appears to be unused [UnusedResources]
+    <string name="setting_calls">Call Log Monitoring</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:67: Warning: The resource R.string.setting_calls_desc appears to be unused [UnusedResources]
+    <string name="setting_calls_desc">Track all incoming and outgoing calls</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:68: Warning: The resource R.string.setting_audio appears to be unused [UnusedResources]
+    <string name="setting_audio">Audio Recording</string>
+            ~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:69: Warning: The resource R.string.setting_audio_desc appears to be unused [UnusedResources]
+    <string name="setting_audio_desc">Enable remote microphone activation</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:70: Warning: The resource R.string.setting_screenshot appears to be unused [UnusedResources]
+    <string name="setting_screenshot">Screenshot Capture</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:71: Warning: The resource R.string.setting_screenshot_desc appears to be unused [UnusedResources]
+    <string name="setting_screenshot_desc">Enable remote screen capture</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:74: Warning: The resource R.string.setting_location_alerts appears to be unused [UnusedResources]
+    <string name="setting_location_alerts">Location Alerts</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:75: Warning: The resource R.string.setting_location_alerts_desc appears to be unused [UnusedResources]
+    <string name="setting_location_alerts_desc">Get notified when child leaves designated area</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:76: Warning: The resource R.string.setting_sms_alerts appears to be unused [UnusedResources]
+    <string name="setting_sms_alerts">Suspicious Message Alerts</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:77: Warning: The resource R.string.setting_sms_alerts_desc appears to be unused [UnusedResources]
+    <string name="setting_sms_alerts_desc">Notify on potentially suspicious messages</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:78: Warning: The resource R.string.setting_call_alerts appears to be unused [UnusedResources]
+    <string name="setting_call_alerts">Unknown Caller Alerts</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:79: Warning: The resource R.string.setting_call_alerts_desc appears to be unused [UnusedResources]
+    <string name="setting_call_alerts_desc">Alert on calls from unknown numbers</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:82: Warning: The resource R.string.setting_refresh_rate appears to be unused [UnusedResources]
+    <string name="setting_refresh_rate">Data Refresh Rate</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:83: Warning: The resource R.string.setting_refresh_rate_desc appears to be unused [UnusedResources]
+    <string name="setting_refresh_rate_desc">How often to check for new data (minutes)</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:84: Warning: The resource R.string.setting_storage appears to be unused [UnusedResources]
+    <string name="setting_storage">Storage Retention</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:85: Warning: The resource R.string.setting_storage_desc appears to be unused [UnusedResources]
+    <string name="setting_storage_desc">How long to keep historic data (days)</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/strings.xml:88: Warning: The resource R.string.scanning appears to be unused [UnusedResources]
+    <string name="scanning">SCANNING CHILD DEVICE</string>
+            ~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/themes.xml:17: Warning: The resource R.style.Theme_G3SPYParent_NoActionBar appears to be unused [UnusedResources]
+    <style name="Theme.G3SPYParent.NoActionBar">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/themes.xml:22: Warning: The resource R.style.Theme_G3SPYParent_AppBarOverlay appears to be unused [UnusedResources]
+    <style name="Theme.G3SPYParent.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar" />
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/rafal/Downloads/G3SPY/G3SPYParent/app/src/main/res/values/themes.xml:24: Warning: The resource R.style.Theme_G3SPYParent_PopupOverlay appears to be unused [UnusedResources]
+    <style name="Theme.G3SPYParent.PopupOverlay" parent="ThemeOverlay.Material3.Light" />
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+0 errors, 76 warnings

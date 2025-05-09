@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/rafal/Downloads/G3SPY/G3SPYParent/app"
+    name=":app"
+    type="APP"
+    maven="G3SPYParent:app:"
+    agpVersion="8.1.1"
+    buildFolder="build"
+    bootClassPath="/home/rafal/Android/Sdk/platforms/android-34/android.jar:/home/rafal/Android/Sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

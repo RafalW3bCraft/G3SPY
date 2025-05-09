@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/xml_backup_rules.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/layout_activity_main.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/xml_data_extraction_rules.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/xml_accessibility_service_config.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.g3spy.child.app-merged_res-62:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.g3spy.child.app-main-64:/drawable/ic_launcher_foreground.xml"
+    }
+]
