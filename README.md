@@ -31,6 +31,10 @@ G3SPY is a multi-module Android project consisting of two main modules: `G3SPYPa
 4. **Build and Run:**
    - Select the desired module (`G3SPYParent` or `G3SPYChild`) and run on an emulator or device.
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=rafalw3bcraft/g3spy@github)](https://gitads.dev/v1/ad-track?source=rafalw3bcraft/g3spy@github)
+
+
 ## Requirements
 - Android Studio (latest recommended)
 - Android SDK
