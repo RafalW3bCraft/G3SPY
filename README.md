@@ -1,5 +1,5 @@
 # G3SPY
-
+<!-- GitAds-Verify: YYLPKAKG3ABMRC7SR5XXAAQYF6DHMZ6D -->
 G3SPY is a multi-module Android project consisting of two main modules: `G3SPYParent` and `G3SPYChild`. Each module is structured as a standalone Android application with its own Gradle configuration and source code.
 
 ## Project Structure
