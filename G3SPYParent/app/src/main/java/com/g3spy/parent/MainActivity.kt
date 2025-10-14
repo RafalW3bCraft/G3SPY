@@ -1,6 +1,8 @@
 package com.g3spy.parent
 
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.AnimatedVisibility
@@ -48,7 +50,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Initialize ViewModel
         viewModel = MonitoringViewModel()
         
         setContent {
@@ -64,7 +65,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-// Main navigation items
 sealed class Screen(val route: String, val icon: ImageVector, val label: String) {
     object Dashboard: Screen("dashboard", Icons.Default.Dashboard, "DASHBOARD")
     object Location: Screen("location", Icons.Default.LocationOn, "LOCATION")
@@ -74,7 +74,6 @@ sealed class Screen(val route: String, val icon: ImageVector, val label: String)
     object Settings: Screen("settings", Icons.Default.Settings, "SETTINGS")
 }
 
-// List of screens for bottom navigation
 val screens = listOf(
     Screen.Dashboard,
     Screen.Location,
@@ -90,10 +89,8 @@ fun CyberpunkParentUI(viewModel: MonitoringViewModel) {
     val navController = rememberNavController()
     val coroutineScope = rememberCoroutineScope()
     
-    // State for tracking whether to show the scanning animation
     var showScanning by remember { mutableStateOf(false) }
     
-    // Pulse animation for cyberpunk effect
     val infinitePulse = rememberInfiniteTransition(label = "pulse")
     val pulseAlpha by infinitePulse.animateFloat(
         initialValue = 0.6f,
@@ -126,14 +123,13 @@ fun CyberpunkParentUI(viewModel: MonitoringViewModel) {
                         )
                         Spacer(modifier = Modifier.weight(1f))
                         
-                        // Scan button with pulsing effect
                         IconButton(
                             onClick = {
                                 showScanning = true
                                 coroutineScope.launch {
-                                    // Simulate scanning operation
+                                    
                                     viewModel.refreshAllData()
-                                    // Hide scanning animation after operation completes
+                                    
                                     showScanning = false
                                 }
                             },
@@ -210,7 +206,7 @@ fun CyberpunkParentUI(viewModel: MonitoringViewModel) {
                     )
                 )
         ) {
-            // Navigation content
+            
             NavHost(
                 navController = navController,
                 startDestination = Screen.Dashboard.route,
@@ -236,7 +232,6 @@ fun CyberpunkParentUI(viewModel: MonitoringViewModel) {
                 }
             }
             
-            // Scanning overlay animation
             AnimatedVisibility(
                 visible = showScanning,
                 enter = fadeIn(),
@@ -292,7 +287,6 @@ fun DashboardScreen(viewModel: MonitoringViewModel) {
             )
         }
         
-        // Child device status card
         item {
             CyberpunkInfoCard(
                 title = "CHILD DEVICE STATUS",
@@ -308,7 +302,6 @@ fun DashboardScreen(viewModel: MonitoringViewModel) {
             }
         }
         
-        // Recent activities
         item {
             CyberpunkInfoCard(
                 title = "RECENT ACTIVITIES",
@@ -316,7 +309,7 @@ fun DashboardScreen(viewModel: MonitoringViewModel) {
                 gradientColors = listOf(NeonBlue.copy(alpha = 0.3f), Color.Transparent)
             ) {
                 Column(modifier = Modifier.fillMaxWidth()) {
-                    // Display last location if available
+                    
                     if (locations.isNotEmpty()) {
                         val lastLocation = locations.maxByOrNull { it.timestamp }
                         if (lastLocation != null) {
@@ -329,7 +322,6 @@ fun DashboardScreen(viewModel: MonitoringViewModel) {
                         }
                     }
                     
-                    // Display last message if available
                     if (messages.isNotEmpty()) {
                         val lastMessage = messages.maxByOrNull { it.timestamp }
                         if (lastMessage != null) {
@@ -342,7 +334,6 @@ fun DashboardScreen(viewModel: MonitoringViewModel) {
                         }
                     }
                     
-                    // Display last call if available
                     if (calls.isNotEmpty()) {
                         val lastCall = calls.maxByOrNull { it.timestamp }
                         if (lastCall != null) {
@@ -358,7 +349,6 @@ fun DashboardScreen(viewModel: MonitoringViewModel) {
             }
         }
         
-        // Quick actions card
         item {
             CyberpunkInfoCard(
                 title = "QUICK ACTIONS",
@@ -406,7 +396,6 @@ fun LocationScreen(viewModel: MonitoringViewModel) {
             modifier = Modifier.padding(bottom = 16.dp)
         )
         
-        // Last known location
         if (locations.isNotEmpty()) {
             val lastLocation = locations.maxByOrNull { it.timestamp }
             if (lastLocation != null) {
@@ -455,7 +444,6 @@ fun LocationScreen(viewModel: MonitoringViewModel) {
         
         Spacer(modifier = Modifier.height(16.dp))
         
-        // Location history
         CyberpunkInfoCard(
             title = "LOCATION HISTORY",
             iconColor = NeonBlue,
@@ -614,7 +602,6 @@ fun MediaScreen(viewModel: MonitoringViewModel) {
             modifier = Modifier.padding(bottom = 16.dp)
         )
         
-        // Screenshots section
         Text(
             text = "SCREENSHOTS",
             style = MaterialTheme.typography.titleMedium,
@@ -623,7 +610,7 @@ fun MediaScreen(viewModel: MonitoringViewModel) {
         )
         
         if (screenshots.isNotEmpty()) {
-            // Display screenshots in grid
+            
             LazyColumn(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -666,7 +653,6 @@ fun MediaScreen(viewModel: MonitoringViewModel) {
         
         Spacer(modifier = Modifier.height(16.dp))
         
-        // Audio recordings section
         Text(
             text = "AUDIO RECORDINGS",
             style = MaterialTheme.typography.titleMedium,
@@ -675,7 +661,7 @@ fun MediaScreen(viewModel: MonitoringViewModel) {
         )
         
         if (audioRecordings.isNotEmpty()) {
-            // Display audio recordings list
+            
             LazyColumn(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -825,8 +811,6 @@ fun SettingsScreen() {
         }
     }
 }
-
-// Helper composables for screens
 
 @Composable
 fun CyberpunkInfoCard(
@@ -1192,7 +1176,6 @@ fun ScreenshotItem(screenshot: ScreenshotData) {
             
             Spacer(modifier = Modifier.height(8.dp))
             
-            // Here we would display the actual screenshot if we had the image library
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -1217,6 +1200,17 @@ fun ScreenshotItem(screenshot: ScreenshotData) {
 
 @Composable
 fun AudioRecordingItem(recording: AudioRecordingData) {
+    var isPlaying by remember { mutableStateOf(false) }
+    var isPreparing by remember { mutableStateOf(false) }
+    var mediaPlayer by remember { mutableStateOf<MediaPlayer?>(null) }
+    
+    DisposableEffect(Unit) {
+        onDispose {
+            mediaPlayer?.release()
+            mediaPlayer = null
+        }
+    }
+    
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -1262,14 +1256,60 @@ fun AudioRecordingItem(recording: AudioRecordingData) {
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                // Play button - would be functional in a real implementation
+                
                 IconButton(
-                    onClick = { /* Play audio */ },
+                    onClick = {
+                        if (isPreparing) {
+                            return@IconButton
+                        }
+                        
+                        if (isPlaying) {
+                            mediaPlayer?.pause()
+                            isPlaying = false
+                        } else {
+                            if (mediaPlayer == null) {
+                                try {
+                                    isPreparing = true
+                                    mediaPlayer = MediaPlayer().apply {
+                                        setDataSource(recording.audioUrl)
+                                        setOnPreparedListener { mp ->
+                                            isPreparing = false
+                                            mp.start()
+                                            isPlaying = true
+                                        }
+                                        setOnCompletionListener {
+                                            isPlaying = false
+                                            it.release()
+                                            mediaPlayer = null
+                                        }
+                                        setOnErrorListener { mp, what, extra ->
+                                            Log.e("AudioPlayer", "Error playing audio: what=$what, extra=$extra")
+                                            isPreparing = false
+                                            isPlaying = false
+                                            mp.release()
+                                            mediaPlayer = null
+                                            true
+                                        }
+                                        prepareAsync()
+                                    }
+                                } catch (e: Exception) {
+                                    Log.e("AudioPlayer", "Failed to initialize MediaPlayer", e)
+                                    isPreparing = false
+                                    mediaPlayer?.release()
+                                    mediaPlayer = null
+                                }
+                            } else {
+                                mediaPlayer?.start()
+                                isPlaying = true
+                            }
+                        }
+                    },
+                    enabled = !isPreparing,
                     modifier = Modifier
                         .size(36.dp)
                         .border(
                             width = 1.dp,
-                            color = NeonPink.copy(alpha = 0.5f),
+                            color = NeonPink.copy(alpha = if (isPreparing) 0.3f else 0.5f),
                             shape = RoundedCornerShape(18.dp)
                         )
                         .padding(1.dp)
@@ -1279,16 +1319,15 @@ fun AudioRecordingItem(recording: AudioRecordingData) {
                         )
                 ) {
                     Icon(
-                        imageVector = Icons.Default.PlayArrow,
-                        contentDescription = "Play",
-                        tint = NeonPink,
+                        imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
+                        contentDescription = if (isPlaying) "Pause" else "Play",
+                        tint = NeonPink.copy(alpha = if (isPreparing) 0.5f else 1f),
                         modifier = Modifier.size(20.dp)
                     )
                 }
                 
                 Spacer(modifier = Modifier.width(12.dp))
                 
-                // Audio waveform visualization (simple representation)
                 Box(
                     modifier = Modifier
                         .weight(1f)
@@ -1307,7 +1346,7 @@ fun AudioRecordingItem(recording: AudioRecordingData) {
                         horizontalArrangement = Arrangement.SpaceEvenly,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        // Simple audio waveform visualization
+                        
                         repeat(20) { i ->
                             val height = (Math.random() * 20).toInt() + 4
                             Box(
@@ -1326,7 +1365,6 @@ fun AudioRecordingItem(recording: AudioRecordingData) {
                 
                 Spacer(modifier = Modifier.width(12.dp))
                 
-                // Duration
                 Text(
                     text = formatDuration(recording.duration),
                     style = MaterialTheme.typography.bodySmall,
@@ -1434,8 +1472,6 @@ fun SettingsSliderItem(
         )
     }
 }
-
-// Utility functions
 
 fun formatTimestamp(timestamp: Long): String {
     val sdf = SimpleDateFormat("MM/dd HH:mm", Locale.getDefault())

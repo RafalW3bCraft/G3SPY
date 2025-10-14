@@ -12,34 +12,29 @@ import androidx.core.app.NotificationCompat
 import com.g3spy.parent.MainActivity
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
+import java.util.concurrent.atomic.AtomicInteger
 
-/**
- * Service to handle Firebase Cloud Messaging for notifications
- */
 class FirebaseMessagingService : FirebaseMessagingService() {
 
     companion object {
         private const val TAG = "FCMService"
         private const val ALERT_CHANNEL_ID = "g3spy_alerts"
+        private val notificationIdCounter = AtomicInteger(1000)
     }
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         Log.d(TAG, "From: ${remoteMessage.from}")
 
-        // Check if message contains a notification payload
         remoteMessage.notification?.let { notification ->
             Log.d(TAG, "Message Notification Title: ${notification.title}")
             Log.d(TAG, "Message Notification Body: ${notification.body}")
             
-            // Display the notification
             sendNotification(notification.title, notification.body)
         }
         
-        // Check if message contains data payload
         if (remoteMessage.data.isNotEmpty()) {
             Log.d(TAG, "Message data payload: ${remoteMessage.data}")
             
-            // Handle different alert types
             when (remoteMessage.data["alert_type"]) {
                 "geofence_violated" -> {
                     val title = "Geofence Alert"
@@ -57,7 +52,7 @@ class FirebaseMessagingService : FirebaseMessagingService() {
                     sendNotification(title, message)
                 }
                 else -> {
-                    // Handle generic notifications
+                    
                     val title = remoteMessage.data["title"]
                     val message = remoteMessage.data["message"]
                     if (!title.isNullOrEmpty() && !message.isNullOrEmpty()) {
@@ -71,8 +66,6 @@ class FirebaseMessagingService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
         Log.d(TAG, "Refreshed token: $token")
         
-        // If needed, send the token to your server
-        // You can use this token to send messages directly to this app instance
     }
 
     private fun sendNotification(title: String?, messageBody: String?) {
@@ -80,7 +73,6 @@ class FirebaseMessagingService : FirebaseMessagingService() {
             return
         }
         
-        // Create an intent to open the main activity when the notification is tapped
         val intent = Intent(this, MainActivity::class.java).apply {
             addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         }
@@ -90,7 +82,6 @@ class FirebaseMessagingService : FirebaseMessagingService() {
             PendingIntent.FLAG_IMMUTABLE
         )
 
-        // Set up the notification appearance
         val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val notificationBuilder = NotificationCompat.Builder(this, ALERT_CHANNEL_ID)
             .setSmallIcon(android.R.drawable.ic_dialog_alert)
@@ -103,7 +94,6 @@ class FirebaseMessagingService : FirebaseMessagingService() {
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        // Create the notification channel for Android O and above
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
                 ALERT_CHANNEL_ID,
@@ -117,8 +107,7 @@ class FirebaseMessagingService : FirebaseMessagingService() {
             notificationManager.createNotificationChannel(channel)
         }
 
-        // Show the notification
-        val notificationId = (System.currentTimeMillis() / 1000).toInt()
+        val notificationId = notificationIdCounter.incrementAndGet()
         notificationManager.notify(notificationId, notificationBuilder.build())
     }
 }

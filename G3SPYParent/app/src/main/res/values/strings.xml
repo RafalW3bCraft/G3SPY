@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">G3SPY Parent</string>
     
-    <!-- Navigation Tabs -->
     <string name="tab_dashboard">DASHBOARD</string>
     <string name="tab_location">LOCATION</string>
     <string name="tab_messages">MESSAGES</string>
@@ -10,40 +9,33 @@
     <string name="tab_media">MEDIA</string>
     <string name="tab_settings">SETTINGS</string>
     
-    <!-- Dashboard Screen -->
     <string name="dashboard_title">SYSTEM OVERVIEW</string>
     <string name="device_status">CHILD DEVICE STATUS</string>
     <string name="recent_activities">RECENT ACTIVITIES</string>
     <string name="quick_actions">QUICK ACTIONS</string>
     
-    <!-- Device Status Labels -->
     <string name="status_last_connection">Last Connection</string>
     <string name="status_battery_level">Battery Level</string>
     <string name="status_device_model">Device Model</string>
     <string name="status_android_version">Android Version</string>
     
-    <!-- Quick Action Buttons -->
     <string name="action_screenshot">Screenshot</string>
     <string name="action_record">Record</string>
     <string name="action_locate">Locate</string>
     
-    <!-- Location Tracking Screen -->
     <string name="location_title">LOCATION TRACKING</string>
     <string name="current_location">CURRENT LOCATION</string>
     <string name="location_history">LOCATION HISTORY</string>
     <string name="no_location_data">NO LOCATION DATA</string>
     <string name="update_location">UPDATE LOCATION</string>
     
-    <!-- Messages Screen -->
     <string name="messages_title">SMS MESSAGES</string>
     <string name="no_messages">NO MESSAGE DATA</string>
     <string name="refresh_data">REFRESH DATA</string>
     
-    <!-- Call Logs Screen -->
     <string name="calls_title">CALL LOGS</string>
     <string name="no_calls">NO CALL DATA</string>
     
-    <!-- Media Screen -->
     <string name="media_title">MEDIA CAPTURES</string>
     <string name="screenshots">SCREENSHOTS</string>
     <string name="no_screenshots">NO SCREENSHOTS</string>
@@ -52,13 +44,11 @@
     <string name="no_recordings">NO RECORDINGS</string>
     <string name="start_recording">START RECORDING</string>
     
-    <!-- Settings Screen -->
     <string name="settings_title">SETTINGS</string>
     <string name="settings_monitoring">MONITORING SETTINGS</string>
     <string name="settings_notification">NOTIFICATION SETTINGS</string>
     <string name="settings_system">SYSTEM SETTINGS</string>
     
-    <!-- Monitoring Settings -->
     <string name="setting_location">Location Tracking</string>
     <string name="setting_location_desc">Track child device location in real-time</string>
     <string name="setting_sms">SMS Monitoring</string>
@@ -70,7 +60,6 @@
     <string name="setting_screenshot">Screenshot Capture</string>
     <string name="setting_screenshot_desc">Enable remote screen capture</string>
     
-    <!-- Notification Settings -->
     <string name="setting_location_alerts">Location Alerts</string>
     <string name="setting_location_alerts_desc">Get notified when child leaves designated area</string>
     <string name="setting_sms_alerts">Suspicious Message Alerts</string>
@@ -78,12 +67,10 @@
     <string name="setting_call_alerts">Unknown Caller Alerts</string>
     <string name="setting_call_alerts_desc">Alert on calls from unknown numbers</string>
     
-    <!-- System Settings -->
     <string name="setting_refresh_rate">Data Refresh Rate</string>
     <string name="setting_refresh_rate_desc">How often to check for new data (minutes)</string>
     <string name="setting_storage">Storage Retention</string>
     <string name="setting_storage_desc">How long to keep historic data (days)</string>
     
-    <!-- Scanning and Progress Indicators -->
     <string name="scanning">SCANNING CHILD DEVICE</string>
 </resources>

